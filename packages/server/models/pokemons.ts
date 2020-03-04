@@ -32,17 +32,38 @@ export function query(args: {
     after === undefined
       ? identity
       : as =>
-          pipe(
-            as,
-            A.findIndex(a => a.id === after),
-            O.map(a => a + 1),
-            O.fold(() => as, idx => as.slice(idx))
-          );
+        pipe(
+          as,
+          A.findIndex(a => a.id === after),
+          O.map(a => a + 1),
+          O.fold(() => as, idx => as.slice(idx))
+        );
 
   const results: Pokemon[] = pipe(
     data,
     filterByQ,
     sliceByAfter,
+    // slicing limit + 1 because the `toConnection` function should known the connection size to determine if there are more results
+    slice(0, limit + 1)
+  );
+  return toConnection(results, limit);
+}
+
+export function queryByType(args: {
+  type: string;
+}): Connection<Pokemon> {
+  const { type } = args;
+  const limit = SIZE;
+
+  const filterByType: (as: Pokemon[]) => Pokemon[] =
+    // filter only Type selected
+    type === undefined
+      ? identity
+      : A.filter(p => p.types.some(e => e.toLowerCase().includes(type.toLowerCase())));
+
+  const results: Pokemon[] = pipe(
+    data,
+    filterByType,
     // slicing limit + 1 because the `toConnection` function should known the connection size to determine if there are more results
     slice(0, limit + 1)
   );
