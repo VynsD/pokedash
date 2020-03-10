@@ -9,7 +9,6 @@ import { ApolloProvider } from '@apollo/react-hooks';
 
 import Pokemons from './shared/components/queries/pokemons';
 import PokemonsByType from './shared/components/queries/pokemonsByType';
-import { stringify } from 'querystring';
 
 // Client-Server linking
 const client: any = new ApolloClient({
@@ -54,11 +53,6 @@ client.query({
   console.error(error);
 });
 
-
-function sayHiTo(name: string): void {
-  return console.log('Hello ' + name);
-};
-
 function callPokemonByType(): boolean {
   showPokemonByType = !showPokemonByType;
   console.log(showPokemonByType);
@@ -67,6 +61,11 @@ function callPokemonByType(): boolean {
 
 function formatID(value: number): string {
   return value < 10 ? `00${value}` : value < 100 ? `0${value}` : `${value}`;
+}
+
+function formatReverse(value: string): number {
+  let parsed = value.replace(/^00|^0/g, "");
+  return parseInt(parsed);
 }
 
 
@@ -80,17 +79,23 @@ class Main extends Component<{}, MainState> {
     };
   }
 
+  getState() {
+    console.log(this.state);
+  }
+
   setPokemonNameValue(this: any, value: string): void {
     this.setState({
       pokemonSearchedByName: value
     });
   };
   setPokemonNumberValue(this: any, value: number): void {
+    let parsed = value - 1 // For specific Number insert
     this.setState({
-      pokemonSearchedByNumber: value - 1 // For specific Number insert
+      pokemonSearchedByNumber: formatID(parsed)
     });
   };
   setPokemonTypeValue(this: any, value: string | string[]): void {
+    console.log(value)
     this.setState({
       pokemonSearchedByType: value
     });
@@ -106,13 +111,12 @@ class Main extends Component<{}, MainState> {
       <ApolloProvider client={client}>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
 
             <ANTD.Button
               type="primary"
-              onClick={() => sayHiTo('Enzo')}
+              onClick={() => callPokemonByType()}
             >
-              Greetings Dude
+              Search by Type test
             </ANTD.Button>
             <ANTD.Button
               type="danger"
@@ -121,26 +125,29 @@ class Main extends Component<{}, MainState> {
               Search By Type test
             </ANTD.Button>
 
-
+            --------- By Name -------
             <Search
               placeholder="Search By Name"
               onSearch={(value: string) => this.setPokemonNameValue(value)}
               type="text"
               enterButton
             />
-            --------- By Name -------
+            ~~~~~ Result ~~~~~~
             {this.state.pokemonSearchedByName ? <Pokemons q={this.state.pokemonSearchedByName} /> : null}
 
-            {/*<ANTD.InputNumber
+            --------- By Number -------
+            <ANTD.InputNumber
               defaultValue={0}
               min={1}
-              max={150}
-              formatter={value => formatID(value)}
-              onChange={(value: number) => this.setPokemonNumberValue(value)}
-            />*/}
-            --------- By Number -------
-            {/*showPokemonByType ? <PokemonsByType pokemonType="fire" /> : null*/}
+              max={151}
+              formatter={(value: any) => formatID(value)}
+              parser={(value: any) => formatReverse(value)}
+              onChange={(value: any) => this.setPokemonNumberValue(value)}
+            />
+            ~~~~~ Result ~~~~~~
+            {this.state.pokemonSearchedByNumber ? <Pokemons after={this.state.pokemonSearchedByNumber} limit={1} /> : null}
 
+            --------- By Type -------
             {/*onSearch={(value: string) => this.checkIsArray(value)}*/}
             <Search
               placeholder="Search By Type"
@@ -148,11 +155,10 @@ class Main extends Component<{}, MainState> {
               type="text"
               enterButton
             />
-            --------- By Type -------
+            ~~~~~ Result ~~~~~~
             {this.state.pokemonSearchedByType ? <PokemonsByType pokemonType={this.state.pokemonSearchedByType} /> : null}
-            <PokemonsByType pokemonType={this.state.pokemonSearchedByType} />
 
-            --------- Querie Example -------
+            <img src={logo} className="App-logo" alt="logo" />
           </header>
         </div>
       </ApolloProvider>
