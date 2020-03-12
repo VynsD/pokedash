@@ -4,9 +4,12 @@ import * as ANTD from 'antd';
 import './assets/styles/Main.scss';
 
 import ApolloClient from 'apollo-boost';
-import { gql } from 'apollo-boost'; // import gql from 'graphql-tag';
 import { ApolloProvider } from '@apollo/react-hooks';
+import { gql } from 'apollo-boost'; // import gql from 'graphql-tag';
 
+import Header from './shared/components/header';
+import Content from './shared/components/content';
+import Footer from './shared/components/footer';
 import Pokemons from './shared/components/queries/pokemons';
 import PokemonsByType from './shared/components/queries/pokemonsByType';
 
@@ -24,7 +27,6 @@ type MainState = {
 // Const
 const { Search } = ANTD.Input;
 // Vars
-let showPokemonByType = false; // TODO Still Needed?
 
 // Testing graphql Query Pokemon
 client.query({
@@ -53,12 +55,6 @@ client.query({
   console.error(error);
 });
 
-function callPokemonByType(): boolean {
-  showPokemonByType = !showPokemonByType;
-  console.log(showPokemonByType);
-  return showPokemonByType
-};
-
 function formatID(value: number): string {
   return value < 10 ? `00${value}` : value < 100 ? `0${value}` : `${value}`;
 }
@@ -68,6 +64,10 @@ function formatReverse(value: string): number {
   return parseInt(parsed);
 }
 
+function checkIsArray(this: any, value: string): void {
+  let stringParsed = value.split(' ');
+  return this.setPokemonTypeValue(stringParsed.length < 0 ? value : stringParsed)
+}
 
 class Main extends Component<{}, MainState> {
   constructor(props: MainState) {
@@ -101,29 +101,14 @@ class Main extends Component<{}, MainState> {
     });
   };
 
-  checkIsArray(value: string): void {
-    let stringParsed = value.split(' ');
-    return this.setPokemonTypeValue(stringParsed.length < 0 ? value : stringParsed)
-  }
-
   render() {
     return (
       <ApolloProvider client={client}>
         <div className="App">
-          <header className="App-header">
-
-            <ANTD.Button
-              type="primary"
-              onClick={() => callPokemonByType()}
-            >
-              Search by Type test
-            </ANTD.Button>
-            <ANTD.Button
-              type="danger"
-              onClick={() => callPokemonByType()}
-            >
-              Search By Type test
-            </ANTD.Button>
+          <Header />
+          <Content />
+          <Footer />
+          <div className="app-wrapper">
 
             --------- By Name -------
             <Search
@@ -148,7 +133,9 @@ class Main extends Component<{}, MainState> {
             {this.state.pokemonSearchedByNumber ? <Pokemons after={this.state.pokemonSearchedByNumber} limit={1} /> : null}
 
             --------- By Type -------
-            {/*onSearch={(value: string) => this.checkIsArray(value)}*/}
+            {/*onSearch={(value: string) => this.checkIsArray(value)}*/
+              //TODO multitype search
+            }
             <Search
               placeholder="Search By Type"
               onSearch={(value: string) => this.setPokemonTypeValue(value)}
@@ -159,7 +146,8 @@ class Main extends Component<{}, MainState> {
             {this.state.pokemonSearchedByType ? <PokemonsByType pokemonType={this.state.pokemonSearchedByType} /> : null}
 
             <img src={logo} className="App-logo" alt="logo" />
-          </header>
+
+          </div>
         </div>
       </ApolloProvider>
     );
