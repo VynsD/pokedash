@@ -4,14 +4,15 @@ import { gql } from 'apollo-boost';
 import { PokemonsConnection, PokemonEdge } from '../../interfaces';
 
 const QUERY_BY_TYPE = gql`
-  query queryByType($pokemonType: String!) {
-    pokemonsByType(type: $pokemonType) {
+  query queryByType($pokemonType: String!, $after: ID, $limit: Int) {
+    pokemonsByType(type: $pokemonType, after: $after, limit: $limit) {
       edges {
         cursor,
         node {
           id,
           name,
           types,
+          classification
         }
       }
       pageInfo {
@@ -50,6 +51,7 @@ function PokemonsByType(props: any) {
       <span>{node.id}</span>
       <span>{node.name}</span>
       <span>{node.types}</span>
+      <span>{node.classification}</span>
       <Pagination />
     </div>
   );

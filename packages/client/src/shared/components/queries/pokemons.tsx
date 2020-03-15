@@ -12,6 +12,7 @@ const QUERY_BY_TYPE = gql`
           id,
           name,
           types,
+          classification
         }
       }
       pageInfo {
@@ -50,6 +51,7 @@ function Pokemons(props: any) {
       <span>{node.id}</span>
       <span>{node.name}</span>
       <span>{node.types}</span>
+      <span>{node.classification}</span>
       <Pagination />
     </div>
   );
