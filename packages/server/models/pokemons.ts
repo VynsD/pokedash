@@ -10,16 +10,17 @@ interface Pokemon {
   id: string;
   name: string;
   types: string[];
+  classification: string;
 }
 
 const SIZE = 10;
 
 export function query(args: {
+  q?: string;
   after?: string;
   limit?: number;
-  q?: string;
 }): Connection<Pokemon> {
-  const { after, q, limit = SIZE } = args;
+  const { q, after, limit = SIZE } = args;
 
   const filterByQ: (as: Pokemon[]) => Pokemon[] =
     // filter only if q is defined
@@ -28,7 +29,7 @@ export function query(args: {
       : A.filter(p => p.name.toLowerCase().includes(q.toLowerCase()));
 
   const sliceByAfter: (as: Pokemon[]) => Pokemon[] =
-    // filter only if q is defined
+    // filter only if after is defined
     after === undefined
       ? identity
       : as =>
@@ -51,9 +52,10 @@ export function query(args: {
 
 export function queryByType(args: {
   type: string;
+  after?: string;
+  limit?: number;
 }): Connection<Pokemon> {
-  const { type } = args;
-  const limit = SIZE;
+  const { type, after, limit = SIZE } = args;
 
   const filterByType: (as: Pokemon[]) => Pokemon[] =
     // filter only Type selected
@@ -61,9 +63,22 @@ export function queryByType(args: {
       ? identity
       : A.filter(p => p.types.some(e => e.toLowerCase().includes(type.toLowerCase())));
 
+  const sliceByAfter: (as: Pokemon[]) => Pokemon[] =
+    // filter only if after is defined
+    after === undefined
+      ? identity
+      : as =>
+        pipe(
+          as,
+          A.findIndex(a => a.id === after),
+          O.map(a => a + 1),
+          O.fold(() => as, idx => as.slice(idx))
+        );
+
   const results: Pokemon[] = pipe(
     data,
     filterByType,
+    sliceByAfter,
     // slicing limit + 1 because the `toConnection` function should known the connection size to determine if there are more results
     slice(0, limit + 1)
   );
