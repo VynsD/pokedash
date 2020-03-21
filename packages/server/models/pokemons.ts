@@ -4,13 +4,14 @@ import * as A from "fp-ts/lib/Array";
 import { identity } from "fp-ts/lib/function";
 import { data } from "../data/pokemons";
 import { toConnection, slice } from "../functions";
-import { Connection } from "../types";
+import { Connection, PokeImage } from "../types";
 
 interface Pokemon {
   id: string;
   name: string;
   types: string[];
   classification: string;
+  sprites: PokeImage
 }
 
 const SIZE = 10;

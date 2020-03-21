@@ -1,3 +1,7 @@
+export interface PokeImg {
+  new: string
+  old: string
+}
 export interface PageInfo {
   endCursor: string
   hasNextPage: Boolean
@@ -8,6 +12,7 @@ export interface Pokemon {
   name: String
   types: [String]
   classification: string
+  sprites: PokeImg
 }
 
 export interface PokemonEdge {

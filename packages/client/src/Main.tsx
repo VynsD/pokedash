@@ -107,7 +107,7 @@ class Main extends Component<{}, MainState> {
         <div className="App">
           <Header />
           <Content />
-          <Footer />
+
           <div className="app-wrapper">
 
             --------- By Name -------
@@ -146,8 +146,8 @@ class Main extends Component<{}, MainState> {
             {this.state.pokemonSearchedByType ? <PokemonsByType pokemonType={this.state.pokemonSearchedByType} /> : null}
 
             <img src={logo} className="App-logo" alt="logo" />
-
           </div>
+          <Footer />
         </div>
       </ApolloProvider>
     );

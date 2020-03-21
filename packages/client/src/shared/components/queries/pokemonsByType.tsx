@@ -12,7 +12,11 @@ const QUERY_BY_TYPE = gql`
           id,
           name,
           types,
-          classification
+          classification,
+          sprites {
+            new,
+            old
+          }
         }
       }
       pageInfo {

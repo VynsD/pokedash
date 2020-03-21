@@ -1,4 +1,5 @@
 import React from 'react';
+import * as ANTD from 'antd';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import { PokemonsConnection, PokemonEdge } from '../../interfaces';
@@ -12,7 +13,11 @@ const QUERY_BY_TYPE = gql`
           id,
           name,
           types,
-          classification
+          classification,
+          sprites {
+            new,
+            old
+          }
         }
       }
       pageInfo {
@@ -45,15 +50,33 @@ function Pokemons(props: any) {
 
   const responseParsed = data.pokemons.edges.map((el: PokemonEdge) => el.node);
   console.log(responseParsed);
+
+  // Style
+  const card_element: {} = {
+    width: "120px",
+    height: "112px"
+  };
+
   // Success Template
   return data.pokemons.edges.map(({ cursor, node }: PokemonEdge) =>
-    <div key={cursor}>
+    <ANTD.Card
+      key={cursor}
+      hoverable
+      style={card_element}
+      cover={<img alt="pokemon img" src={node.sprites.new} />}
+    >
       <span>{node.id}</span>
-      <span>{node.name}</span>
-      <span>{node.types}</span>
-      <span>{node.classification}</span>
-      <Pagination />
-    </div>
+      <ANTD.Card.Meta
+        title={node.name}
+        description={
+          <div>
+            <span>{node.classification}</span>
+            <span>{node.types}</span>
+          </div>
+        }>
+      </ANTD.Card.Meta>
+      {/*<Pagination />*/}
+    </ANTD.Card>
   );
 }
 

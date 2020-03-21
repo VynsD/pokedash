@@ -1,3 +1,8 @@
+type PokeImg {
+  new: String
+  old: String
+}
+
 type PageInfo {
   endCursor: ID
   hasNextPage: Boolean
@@ -7,7 +12,8 @@ type Pokemon {
   id: ID!
   name: String
   types: [String]
-  classification: String
+  classification: String,
+  sprites: PokeImg
 }
 
 type PokemonEdge {
