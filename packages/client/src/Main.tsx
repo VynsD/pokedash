@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './assets/styles/img/logo.svg';
+import logo from './assets/img/logo.svg';
 import * as ANTD from 'antd';
 import './assets/styles/Main.scss';
 
@@ -26,6 +26,7 @@ type MainState = {
 }
 // Const
 const { Search } = ANTD.Input;
+const { Radio } = ANTD;
 // Vars
 
 // Testing graphql Query Pokemon
@@ -101,6 +102,14 @@ class Main extends Component<{}, MainState> {
     });
   };
 
+  typeSetter = (e: any): void => {
+    console.log(`radio ${e.target.value} checked`);
+    this.setPokemonTypeValue(e.target.value);
+    /* this.setState({
+      pokemonSearchedByType: e.target.value
+    }); */
+  };
+
   render() {
     return (
       <ApolloProvider client={client}>
@@ -133,15 +142,28 @@ class Main extends Component<{}, MainState> {
             {this.state.pokemonSearchedByNumber ? <Pokemons after={this.state.pokemonSearchedByNumber} limit={1} /> : null}
 
             --------- By Type -------
-            {/*onSearch={(value: string) => this.checkIsArray(value)}*/
-              //TODO multitype search
-            }
-            <Search
-              placeholder="Search By Type"
-              onSearch={(value: string) => this.setPokemonTypeValue(value)}
-              type="text"
-              enterButton
-            />
+
+            <Radio.Group buttonStyle="solid" onChange={this.typeSetter}>
+              <Radio.Button className="radio-bug" value="Bug">Bug</Radio.Button>
+              <Radio.Button className="radio-dark" value="Dark">Dark</Radio.Button>
+              <Radio.Button className="radio-dragon" value="Dragon">Dragon</Radio.Button>
+              <Radio.Button className="radio-electric" value="Electric">Electric</Radio.Button>
+              <Radio.Button className="radio-fairy" value="Fairy">Fairy</Radio.Button>
+              <Radio.Button className="radio-fighting" value="Fighting">Fighting</Radio.Button>
+              <Radio.Button className="radio-fire" value="Fire">Fire</Radio.Button>
+              <Radio.Button className="radio-flying" value="Flying">Flying</Radio.Button>
+              <Radio.Button className="radio-ghost" value="Ghost">Ghost</Radio.Button>
+              <Radio.Button className="radio-grass" value="Grass">Grass</Radio.Button>
+              <Radio.Button className="radio-ground" value="Ground">Ground</Radio.Button>
+              <Radio.Button className="radio-ice" value="Ice">Ice</Radio.Button>
+              <Radio.Button className="radio-normal" value="Normal">Normal</Radio.Button>
+              <Radio.Button className="radio-poison" value="Poison">Poison</Radio.Button>
+              <Radio.Button className="radio-psychic" value="Psychic">Psychic</Radio.Button>
+              <Radio.Button className="radio-rock" value="Rock">Rock</Radio.Button>
+              <Radio.Button className="radio-steel" value="Steel">Steel</Radio.Button>
+              <Radio.Button className="radio-water" value="Water">Water</Radio.Button>
+            </Radio.Group>
+
             ~~~~~ Result ~~~~~~
             {this.state.pokemonSearchedByType ? <PokemonsByType pokemonType={this.state.pokemonSearchedByType} /> : null}
 

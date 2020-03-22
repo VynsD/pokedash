@@ -3,6 +3,7 @@ import * as ANTD from 'antd';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import { PokemonsConnection, PokemonEdge } from '../../interfaces';
+import { responsePathAsArray } from 'apollo-link/node_modules/apollo-utilities/node_modules/graphql';
 
 const QUERY_BY_TYPE = gql`
   query query($q: String, $after: ID, $limit: Int) {
@@ -51,19 +52,18 @@ function Pokemons(props: any) {
   const responseParsed = data.pokemons.edges.map((el: PokemonEdge) => el.node);
   console.log(responseParsed);
 
-  // Style
-  const card_element: {} = {
-    width: "120px",
-    height: "112px"
-  };
-
   // Success Template
   return data.pokemons.edges.map(({ cursor, node }: PokemonEdge) =>
     <ANTD.Card
+      className="card"
       key={cursor}
       hoverable
-      style={card_element}
-      cover={<img alt="pokemon img" src={node.sprites.new} />}
+      cover={
+        <img
+          alt="pokemon img"
+          src={node.sprites.new}
+          className="card-sprite card-sprite-fixed" />
+      }
     >
       <span>{node.id}</span>
       <ANTD.Card.Meta
