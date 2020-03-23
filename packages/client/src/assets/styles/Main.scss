@@ -69,8 +69,13 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
 
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: currentColor;
+  }
 }
-.radio { //ant-radio-group
+.radio {
+  // Added Overrides for .ant-radio-button-wrapper-checked
+
   &-bug {
     background-color: #729f3f;
     color: #FFF;
@@ -84,70 +89,184 @@
   &-dark {
     background-color: #707070;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #707070 !important;
+      border-color: #707070 !important;
+      background: transparent !important;
+    }
   }
   &-dragon {
     background-image: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #53a4cf !important;
+      border-color: #f16e57 !important;
+      background: transparent !important;
+    
+      &:not(.ant-radio-button-wrapper-disabled)::before {
+        background-color: #f16e57;
+      }
+    }
   }
   &-electric {
     background-color: #eed535;
     color: #000;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #eed535 !important;
+      border-color: #eed535 !important;
+      background: transparent !important;
+    }
   }
   &-fairy {
     background-color: #fdb9e9;
     color: #000;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #fdb9e9 !important;
+      border-color: #fdb9e9 !important;
+      background: transparent !important;
+    }
   }
   &-fighting {
     background-color: #d56723;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #d56723 !important;
+      border-color: #d56723 !important;
+      background: transparent !important;
+    }
   }
   &-fire {
     background-color: #fd7d24;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #fd7d24 !important;
+      border-color: #fd7d24 !important;
+      background: transparent !important;
+    }
   }
   &-flying {
     background-image: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);;
     color: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);;
+  
+    &.ant-radio-button-wrapper-checked {
+      color: #3dc7ef !important;
+      border-color: #bdb9b8 !important;
+      background: transparent !important;
+    
+      &:not(.ant-radio-button-wrapper-disabled)::before {
+        background-color: #bdb9b8;
+      }
+    }
   }
   &-ghost {
     background-color: #7b62a3;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #7b62a3 !important;
+      border-color: #7b62a3 !important;
+      background: transparent !important;
+    }
   }
   &-grass {
     background-color: #9bcc50;
     color: #000;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #9bcc50 !important;
+      border-color: #9bcc50 !important;
+      background: transparent !important;
+    }
   }
   &-ground {
     background-image: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
     color: #000;
+  
+    &.ant-radio-button-wrapper-checked {
+      color: #f7de3f !important;
+      border-color: #ab9842 !important;
+      background: transparent !important;
+    
+      &:not(.ant-radio-button-wrapper-disabled)::before {
+        background-color: #ab9842;
+      }
+    }
   }
   &-ice {
     background-color: #51c4e7;
     color: #000;
+    
+    &.ant-radio-button-wrapper-checked {
+      color: #51c4e7 !important;
+      border-color: #51c4e7 !important;
+      background: transparent !important;
+    }
   }
   &-normal {
     background-color: #a4acaf;
     color: #000;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #a4acaf !important;
+      border-color: #a4acaf !important;
+      background: transparent !important;
+    }
   }
   &-poison {
     background-color: #b97fc9;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #b97fc9 !important;
+      border-color: #b97fc9 !important;
+      background: transparent !important;
+    }
   }
   &-psychic {
     background-color: #f366b9;
     color: #FFF;
+    
+    &.ant-radio-button-wrapper-checked {
+      color: #f366b9 !important;
+      border-color: #f366b9 !important;
+      background: transparent !important;
+    }
   }
   &-rock {
     background-color: #a38c21;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #a38c21 !important;
+      border-color: #a38c21 !important;
+      background: transparent !important;
+    }
   }
   &-steel {
     background-color: #9eb7b8;
     color: #000;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #9eb7b8 !important;
+      border-color: #9eb7b8 !important;
+      background: transparent !important;
+    }
   }
   &-water {
     background-color: #4592c4;
     color: #FFF;
+
+    &.ant-radio-button-wrapper-checked {
+      color: #4592c4 !important;
+      border-color: #4592c4 !important;
+      background: transparent !important;
+    }
   }
 }
 
