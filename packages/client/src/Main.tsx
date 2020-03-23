@@ -9,6 +9,7 @@ import { gql } from 'apollo-boost'; // import gql from 'graphql-tag';
 
 import Header from './shared/components/header';
 import Content from './shared/components/content';
+import Pokedex from './shared/components/pokedex';
 import Footer from './shared/components/footer';
 import Pokemons from './shared/components/queries/pokemons';
 import PokemonsByType from './shared/components/queries/pokemonsByType';
@@ -22,7 +23,9 @@ const client: any = new ApolloClient({
 type MainState = {
   pokemonSearchedByName: string,
   pokemonSearchedByNumber: number,
-  pokemonSearchedByType: string | [string]
+  pokemonSearchedByType: string | [string],
+  triggerDashboard: boolean,
+  triggerPokedex: boolean
 }
 // Const
 const { Search } = ANTD.Input;
@@ -65,18 +68,15 @@ function formatReverse(value: string): number {
   return parseInt(parsed);
 }
 
-function checkIsArray(this: any, value: string): void {
-  let stringParsed = value.split(' ');
-  return this.setPokemonTypeValue(stringParsed.length < 0 ? value : stringParsed)
-}
-
 class Main extends Component<{}, MainState> {
   constructor(props: MainState) {
     super(props);
     this.state = {
       pokemonSearchedByName: "",
       pokemonSearchedByNumber: 0,
-      pokemonSearchedByType: ""
+      pokemonSearchedByType: "",
+      triggerDashboard: true,
+      triggerPokedex: false,
     };
   }
 
@@ -102,22 +102,38 @@ class Main extends Component<{}, MainState> {
     });
   };
 
+  callDashboard = (): void => {
+    this.setState({
+      triggerDashboard: true,
+      triggerPokedex: false
+    });
+  }
+  callPokedex = (): void => {
+    this.setState({
+      triggerDashboard: false,
+      triggerPokedex: true
+    });
+  }
+
   typeSetter = (e: any): void => {
     console.log(`radio ${e.target.value} checked`);
     this.setPokemonTypeValue(e.target.value);
-    /* this.setState({
-      pokemonSearchedByType: e.target.value
-    }); */
   };
 
   render() {
+    const HeaderProps = {
+      callDashboard: this.callDashboard,
+      callPokedex: this.callPokedex,
+    }
+
     return (
       <ApolloProvider client={client}>
         <div className="App">
-          <Header />
-          <Content />
-
+          <Header {...HeaderProps} />
           <div className="app-wrapper">
+
+            {this.state.triggerDashboard ? <Content /> : null}
+            {this.state.triggerPokedex ? <Pokedex /> : null}
 
             --------- By Name -------
             <Search
@@ -143,7 +159,7 @@ class Main extends Component<{}, MainState> {
 
             --------- By Type -------
 
-            <Radio.Group buttonStyle="solid" onChange={this.typeSetter}>
+            <Radio.Group className="radio" buttonStyle="solid" onChange={this.typeSetter}>
               <Radio.Button className="radio-bug" value="Bug">Bug</Radio.Button>
               <Radio.Button className="radio-dark" value="Dark">Dark</Radio.Button>
               <Radio.Button className="radio-dragon" value="Dragon">Dragon</Radio.Button>
