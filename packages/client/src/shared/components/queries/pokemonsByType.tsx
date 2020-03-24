@@ -1,4 +1,6 @@
 import React from 'react';
+import * as ANTD from 'antd';
+
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import { PokemonsConnection, PokemonEdge } from '../../interfaces';
@@ -51,13 +53,29 @@ function PokemonsByType(props: any) {
   console.log(responseParsed);
   // Success Template
   return data.pokemonsByType.edges.map(({ cursor, node }: PokemonEdge) =>
-    <div key={cursor}>
+    <ANTD.Card
+      className="card"
+      key={cursor}
+      hoverable
+      cover={
+        <img
+          alt="pokemon img"
+          src={node.sprites.new}
+          className="card-sprite card-sprite-fixed" />
+      }
+    >
       <span>{node.id}</span>
-      <span>{node.name}</span>
-      <span>{node.types}</span>
-      <span>{node.classification}</span>
-      <Pagination />
-    </div>
+      <ANTD.Card.Meta
+        title={node.name}
+        description={
+          <div>
+            <span>{node.classification}</span>
+            <span>{node.types}</span>
+          </div>
+        }>
+      </ANTD.Card.Meta>
+      {/*<Pagination /> NOT HERE*/}
+    </ANTD.Card>
   );
 }
 

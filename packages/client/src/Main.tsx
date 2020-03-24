@@ -181,7 +181,11 @@ class Main extends Component<{}, MainState> {
             </Radio.Group>
 
             ~~~~~ Result ~~~~~~
-            {this.state.pokemonSearchedByType ? <PokemonsByType pokemonType={this.state.pokemonSearchedByType} /> : null}
+            {this.state.pokemonSearchedByType ? (
+              <div className="grid-wrapper">
+                <PokemonsByType pokemonType={this.state.pokemonSearchedByType} />
+              </div>
+            ) : null}
 
             <img src={logo} className="App-logo" alt="logo" />
           </div>
