@@ -20,9 +20,9 @@ export class Header extends Component<HeaderProps, {}> {
 
   render() {
     return (
-      <header className="header-wrapper">
+      <header className="headerWrapper">
+        {/*className="headerWrapper"*/}
         <ANTD.PageHeader
-          className="header-wrapper"
           title=""
           footer={
             <ANTD.Tabs defaultActiveKey="1"
@@ -31,7 +31,6 @@ export class Header extends Component<HeaderProps, {}> {
                 tab="DashBoard"
                 key="1">
                 {/* Carico la DashBoard */}
-
               </TabPane>
               <TabPane
                 tab="Pokedex"
