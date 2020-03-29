@@ -1,0 +1,12 @@
+/* General */
+// Helpers
+@mixin expand-content($width, $height:null) {
+  @if $height != null {
+    width: $width;
+    height: $height;
+  }
+  @else {
+    width: $width;
+    height: $width;
+  }
+}
