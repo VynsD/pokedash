@@ -65,17 +65,25 @@ function Pokemons(props: any) {
           className="card-sprite card-sprite-fixed" />
       }
     >
-      <span>{node.id}</span>
+      <span className="card-number">{node.id}</span>
       <ANTD.Card.Meta
         title={node.name}
         description={
-          <div>
-            <span>{node.classification}</span>
-            <span>{node.types}</span>
+          <div className="card-description">
+            <div className="card-description--classification" >
+              <span>{node.classification}</span>
+            </div>
+            <div className="card-description--types">
+              {
+                node.types.map((el) => {
+                  return <span className="types-label">{el}</span>
+                })
+              }
+            </div>
           </div>
         }>
       </ANTD.Card.Meta>
-      {/*<Pagination />*/}
+      {/*<Pagination /> NOT HERE*/}
     </ANTD.Card>
   );
 }

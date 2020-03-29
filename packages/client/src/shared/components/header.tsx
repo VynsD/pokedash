@@ -20,7 +20,7 @@ export class Header extends Component<HeaderProps, {}> {
 
   render() {
     return (
-      <header className="headerWrapper">
+      <header className="header-wrapper">
         {/*className="headerWrapper"*/}
         <ANTD.PageHeader
           title=""
