@@ -35,7 +35,7 @@ class Pokedex extends Component<{}, PokedexState> {
         --------- By Number -------
         <ANTD.InputNumber
           defaultValue={0}
-          min={1}
+          min={0}
           max={151}
           formatter={(value: any) => this.formatID(value)}
           parser={(value: any) => this.formatReverse(value)}
