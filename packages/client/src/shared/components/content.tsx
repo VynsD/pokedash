@@ -91,7 +91,8 @@ class Content extends Component<{}, ContnetState> {
                 onClick={() => this.controllDrawer()}
                 ghost
               >
-                Search By Type
+                {(this.state.drawerUnfold === "drawer-radio drawer-radio--initial" ||
+                  this.state.drawerUnfold === "drawer-radio drawer-radio--fold") ? 'Search By Type' : 'Close Drawer'}
               </ANTD.Button>
             </div>
             <div className={this.state.drawerUnfold}>
@@ -125,6 +126,12 @@ class Content extends Component<{}, ContnetState> {
           </div>
         </div>
         <div className="main-wrapper_results" >
+          {/* Results Placeholder */}
+          {(!this.state.pokemonSearchedByName && !this.state.pokemonSearchedByType) ? (
+            <div className="grid-onlyElement">
+              <h2 className="grid-onlyElement--text">Search for a Pokémon!</h2>
+            </div>
+          ) : null}
           {/* Result By Name */}
           {this.state.pokemonSearchedByName ? <Pokemons q={this.state.pokemonSearchedByName} /> : null}
           {/* Result By Type */}

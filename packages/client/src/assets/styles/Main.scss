@@ -76,7 +76,10 @@ body {
           }
         }
       }
-      //*/        
+      //*/
+      &--text {
+        color: #FFF;
+      }        
     }
     &-wrapper {
       @include expand-content(90%);
