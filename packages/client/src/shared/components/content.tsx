@@ -126,17 +126,9 @@ class Content extends Component<{}, ContnetState> {
         </div>
         <div className="main-wrapper_results" >
           {/* Result By Name */}
-          {this.state.pokemonSearchedByName ? (
-            <div className="grid-onlyElement">
-              <Pokemons q={this.state.pokemonSearchedByName} />
-            </div>
-          ) : null}
+          {this.state.pokemonSearchedByName ? <Pokemons q={this.state.pokemonSearchedByName} /> : null}
           {/* Result By Type */}
-          {this.state.pokemonSearchedByType ? (
-            <div className="grid-wrapper">
-              <PokemonsByType pokemonType={this.state.pokemonSearchedByType} />
-            </div>
-          ) : null}
+          {this.state.pokemonSearchedByType ? <PokemonsByType pokemonType={this.state.pokemonSearchedByType} /> : null}
         </div>
       </main>
     );

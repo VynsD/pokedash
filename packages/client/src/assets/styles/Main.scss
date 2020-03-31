@@ -59,17 +59,24 @@ body {
   .grid {
     &-onlyElement {
       @include expand-content(100%);
-      /*
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: repeat(5, 0.5fr);
-      grid-column-gap: 5px;
-      //*/
-      //*
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      //*/
+
+      //* Override
+      .ant-spin {
+        font-size: 22px;
+
+        .ant-spin-dot {
+          font-size: 15px;
+          @include expand-content(2em);
+  
+          .ant-spin-dot-item {
+            @include expand-content(15px);
+          }
+        }
+      }
+      //*/        
     }
     &-wrapper {
       @include expand-content(90%);
@@ -141,6 +148,48 @@ body {
     }
   }
 
+  .error {
+    &-wrapper {
+      @include expand-content(70%);
+      background: linear-gradient(90deg, #6a2e2ec7, transparent);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 3fr;
+      align-items: center;
+      justify-content: center;
+    }
+    &-header {
+      grid-area: 1 / 1 / 2 / 2;
+      color: #9a1e1e;
+    }
+    &-message {
+      @include expand-content(100%, 70%);
+      font-size: 1.5rem;
+      grid-area: 2 / 1 / 3 / 2;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 3fr 1fr;
+      align-items: center;
+      justify-content: center;
+    
+      :first-child {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      :nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      :nth-child(3) {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+    }
+    &-img {
+      grid-area: 1 / 2 / 4 / 3;
+      @include expand-content(70%);
+      align-self: center;
+      justify-self: center;
+    }
+  }
+
   /* Header */
   .header-wrapper {
     font-size: 18px;
@@ -160,7 +209,7 @@ body {
         display: grid;
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 2fr 3fr;
-        background: aqua;
+        //background: aqua;
 
         &--input {
           grid-area: 1 / 1 / 2 / 2;
@@ -179,7 +228,6 @@ body {
         }
         &--drawer {
           grid-area: 1 / 2 / 3 / 3;
-          //overflow: hidden;
           
           .drawer {
             &-handle {              
@@ -192,8 +240,7 @@ body {
             &-radio {
               pointer-events: none;
               will-change: auto;
-
-              background: white;
+              //background: white;
               
               &--initial {
                 @include expand-content(100%, 0);
@@ -241,8 +288,7 @@ body {
         @include expand-content(100%, 90%);
         grid-area: 3 / 1 / 4 / 2;
         display: flex;
-
-        background: aquamarine;
+        //background: aquamarine;
       }
     }
   }
@@ -468,7 +514,6 @@ body {
       @media screen and (max-width: 768px) {
         grid-template-columns: 3fr repeat(3, 1fr) 3fr;
       }
-
     }
     &-empty {
       content: " ";
