@@ -20,6 +20,11 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
 
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
   .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
     background-color: currentColor;
   }
@@ -87,6 +92,11 @@ body {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: auto;
       grid-gap: 5px;
+
+      @media screen and (max-width: 425px) {
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(10, 1fr);
+      }
     }
   }
 
@@ -208,11 +218,11 @@ body {
       align-items: center;
 
       &_header {
+        @include expand-content(100);
         grid-area: 1 / 1 / 3 / 2;
         display: grid;
         grid-template-rows: 1fr 2fr;
         grid-template-columns: 2fr 3fr;
-        //background: aqua;
 
         &--input {
           grid-area: 1 / 1 / 2 / 2;
@@ -243,7 +253,6 @@ body {
             &-radio {
               pointer-events: none;
               will-change: auto;
-              //background: white;
               
               &--initial {
                 @include expand-content(100%, 0);
@@ -268,6 +277,7 @@ body {
                   height: 0;
                   transform: translateY(-20px);
                   opacity: 0;
+                  display: none;
                 }
               }
               @keyframes drawer-open {
@@ -291,7 +301,7 @@ body {
         @include expand-content(100%, 90%);
         grid-area: 3 / 1 / 4 / 2;
         display: flex;
-        //background: aquamarine;
+        //background: linear-gradient(90deg, #393c3d2a 28%, #73f0ff 100%);
       }
     }
   }
@@ -498,7 +508,7 @@ body {
   /* Footer */
   .footer {
     &-wrapper {
-      @include expand-content(100%, 110px);
+      @include expand-content(100%, 72px);
       display: grid;
       grid-template-columns: 4.5fr repeat(3, 0.5fr) 4.5fr;
       grid-template-rows: 100%;
@@ -523,6 +533,7 @@ body {
     }
     &-icon {
       grid-area: 1 / 3 / 2 / 4 ;
+      @include expand-content(100%);
     }
     &-text {
       font-size: 22px;
