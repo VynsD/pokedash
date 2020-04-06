@@ -64,10 +64,6 @@ class Content extends Component<{}, ContnetState> {
     this.setPokemonTypeValue(e.target.value);
   };
 
-  componentWillUnmount() {
-
-  }
-
   render() {
     return (
       <main className="main-wrapper">

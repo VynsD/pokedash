@@ -28,10 +28,6 @@ class Main extends Component<{}, MainState> {
       triggerPokedex: false,
     };
   }
-
-  showState() {
-    console.log(this.state);
-  }
   callDashboard = (): void => {
     this.setState({
       triggerDashboard: true,

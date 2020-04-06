@@ -1,7 +1,7 @@
 import React, { Component, Props } from 'react';
 import * as ANTD from 'antd';
 
-// Constants
+// Consta
 const { TabPane } = ANTD.Tabs;
 // Props
 type HeaderProps = {
@@ -14,7 +14,6 @@ export class Header extends Component<HeaderProps, {}> {
   }
 
   checkKey = (key: string): void => {
-    console.log(key);
     key === "1" ? this.props.callDashboard() : this.props.callPokedex();
   }
 
