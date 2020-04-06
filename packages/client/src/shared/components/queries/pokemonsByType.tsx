@@ -2,7 +2,7 @@ import React from 'react';
 import * as ANTD from 'antd';
 
 import { useQuery } from '@apollo/react-hooks';
-import { gql } from 'apollo-boost';
+import { gql } from 'apollo-boost'; // import gql from 'graphql-tag';
 import { PokemonEdge } from '../../interfaces';
 
 import Loading from '../loading';

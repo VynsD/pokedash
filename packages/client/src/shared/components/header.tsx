@@ -3,7 +3,7 @@ import * as ANTD from 'antd';
 
 // Constants
 const { TabPane } = ANTD.Tabs;
-
+// Props
 type HeaderProps = {
   callDashboard: any,
   callPokedex: any,
@@ -21,7 +21,6 @@ export class Header extends Component<HeaderProps, {}> {
   render() {
     return (
       <header className="header-wrapper">
-        {/*className="headerWrapper"*/}
         <ANTD.PageHeader
           title=""
           footer={
