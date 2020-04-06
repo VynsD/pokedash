@@ -1,7 +1,7 @@
 import React, { Component, Props } from 'react';
 import * as ANTD from 'antd';
 
-// Consta
+// Consts
 const { TabPane } = ANTD.Tabs;
 // Props
 type HeaderProps = {
