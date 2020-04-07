@@ -59,51 +59,57 @@ function RightSide(Props: any) {
         setRightPannelState('right-wrapper--open')
       );
   }
+  // Const
+  let btns: Array<{ name: string }> = new Array(10).fill({ name: 'singleBtn' });
 
   return (
-    <div className={'right-wrapper ' + rightPannelState}
+    <div
+      className={'right-wrapper ' + rightPannelState}
       onClick={() => changePannelState()}
     >
       <div className="right-header">
         <div className="right-header--curve"></div>
       </div>
       <div className="right-pannel">
-
-        <div className="right-screenDescription">
+        <div className="right-pannel_rotated right-pannel_rotated--arrow"></div>
+        <div className="right-pannel_rotated right-pannel_rotated--bar"></div>
+        <div className="right-pannel_screen">
+          {/* Inserisci descrizione */}
         </div>
-
-        <div className="right-multiBtns">
+        <div className="right-pannel_multiBtns">
+          {
+            btns.map((el) => {
+              return <span className={el.name}></span>
+            })
+          }
         </div>
-
-        <div className="right-midBtns">
-          <div className="midBtn-left">
-            <div className="btnWhite">btn1</div>
-            <div className="btnWhite">btn2</div>
+        <div className="right-pannel_midBtns">
+          <div className="right-pannel_midBtns--left">
+            <div className="whiteBtn"></div>
+            <div className="whiteBtn"></div>
           </div>
-          <div className="midBtn-right">
-            <div className="btnBlack">btn1</div>
-            <div className="btnBlack">btn2</div>
-            <div className="btnOrange">btnCirlce</div>
+          <div className="right-pannel_midBtns--right-upper">
+            <div className="blackBtn-slim"></div>
+            <div className="blackBtn-slim"></div>
+          </div>
+          <div className="right-pannel_midBtns--right-lower">
+            <div className="led-yellow"></div>
           </div>
         </div>
-
-        <div className="right-lowBtns">
-          <div className="left">
-            <div className="btnBlack">btn1</div>
-            <div className="btnBlack">btn2</div>
+        <div className="right-pannel_lowBtns">
+          <div className="right-pannel_lowBtns--left">
+            <div className="blackBtn"></div>
+            <div className="blackBtn"></div>
           </div>
-          <div className="right">
-            <div className="btnBlack">btn3</div>
-            <div className="btnBlack">btn4</div>
+          <div className="right-pannel_lowBtns--right">
+            <div className="blackBtn"></div>
+            <div className="blackBtn"></div>
           </div>
         </div>
       </div>
-
     </div>
   )
 }
-
-
 
 class Pokedex extends Component<{}, PokedexState> {
   constructor(props: {}) {
