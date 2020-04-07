@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import * as ANTD from 'antd';
 
-import Pokemons from '../components/queries/pokemons';
+import PokemonsByNumber from './queries/pokemonsByNumber';
 
 // Types
 type PokedexState = {
@@ -9,6 +9,9 @@ type PokedexState = {
 }
 
 function LeftSide(Props: any) {
+  // Hooks
+  const [leftSideState, setLeftSideState] = useState(Props);
+
   return (
     <div className="left-wrapper">
       <div className="left-header">
@@ -26,7 +29,7 @@ function LeftSide(Props: any) {
           <div className="left-pannel_red-dot left-pannel_red-dot--upper-left"></div>
           <div className="left-pannel_red-dot left-pannel_red-dot--upper-right"></div>
           <div className="left-pannel_screen">
-            {/* METTERE pokemons query result name / img */}
+            {Props.pokemonSearchedByNumber ? <PokemonsByNumber after={Props.pokemonSearchedByNumber} limit={1} typeData="image" /> : null}
           </div>
           <div className="left-pannel_red-dot left-pannel_red-dot--lower"></div>
           <div className="left-pannel_grill"></div>
@@ -37,7 +40,14 @@ function LeftSide(Props: any) {
             <div className="left-pannel_btnSection--area-btnRed"></div>
             <div className="left-pannel_btnSection--area-btnBlue"></div>
             <div className="left-pannel_btnSection--area-lowScreen">
-              {/* METTERE ANTD input number */}
+              <ANTD.InputNumber
+                defaultValue={0}
+                min={0}
+                max={151}
+                formatter={(value: any) => leftSideState.formatID(value)}
+                parser={(value: any) => leftSideState.formatReverse(value)}
+                onChange={(value: any) => leftSideState.onChange(value)}
+              />
             </div>
           </div>
           <div className="left-pannel_btnSection--cross"></div>
@@ -74,7 +84,7 @@ function RightSide(Props: any) {
         <div className="right-pannel_rotated right-pannel_rotated--arrow"></div>
         <div className="right-pannel_rotated right-pannel_rotated--bar"></div>
         <div className="right-pannel_screen">
-          {/* Inserisci descrizione */}
+          {Props.pokemonSearchedByNumber ? <PokemonsByNumber after={Props.pokemonSearchedByNumber} limit={1} typeData="description" /> : null}
         </div>
         <div className="right-pannel_multiBtns">
           {
@@ -136,28 +146,19 @@ class Pokedex extends Component<{}, PokedexState> {
     const LeftSideProps = {
       formatID: this.formatID,
       formatReverse: this.formatReverse,
-      setPokemonNumberValue: this.setPokemonNumberValue
+      onChange: (value: number) => {
+        this.setPokemonNumberValue(value);
+      },
+      pokemonSearchedByNumber: this.state.pokemonSearchedByNumber
+    }
+    const RightSideProps = {
+      pokemonSearchedByNumber: this.state.pokemonSearchedByNumber
     }
 
     return (
-      <div className="FAKEpokedex-wrapper">
-        --------- By Number -------
-        <ANTD.InputNumber
-          defaultValue={0}
-          min={0}
-          max={151}
-          formatter={(value: any) => this.formatID(value)}
-          parser={(value: any) => this.formatReverse(value)}
-          onChange={(value: any) => this.setPokemonNumberValue(value)}
-        />
-        ~~~~~ Result ~~~~~~
-        {this.state.pokemonSearchedByNumber ? <Pokemons after={this.state.pokemonSearchedByNumber} limit={1} /> : null}
-
-        <div className="pokedex-wrapper">
-          <LeftSide {...LeftSideProps} />
-          <RightSide />
-        </div>
-
+      <div className="pokedex-wrapper">
+        <LeftSide {...LeftSideProps} />
+        <RightSide {...RightSideProps} />
       </div>
     );
   }
