@@ -20,6 +20,7 @@
         background: linear-gradient(to right, rgb(185, 0, 0) 5%, rgb(226, 44, 12) 10%, rgb(185, 0, 0) 60%, #89061C 100%);
         border: solid 1px black;
         border-radius: 10px;
+        border-bottom-right-radius: 0;
         box-shadow: -5px 5px 0vh 2px rgba(0, 0, 0, .7);
       }
       &-header {
@@ -47,7 +48,7 @@
             &:before {
               content: "";
               position: absolute;
-              border-left: 140px solid rgb(185, 0, 0);;
+              border-left: 140px solid rgb(185, 0, 0);
               border-bottom: 90px solid transparent;
               height: 0;
               top: 0; // TODO Align with box shadow
@@ -76,7 +77,7 @@
                 top: 5px;
                 right: 5.5%;
                 border-radius: 50%;
-                background: linear-gradient(white, transparent);;
+                background: linear-gradient(white, transparent);
               }
             }
             &-red {
@@ -248,7 +249,7 @@
               height: 15px;
               width: 60px;
               border-radius: 5vh;
-              border: .2vh solid rgb(5, 5, 97);;
+              border: .2vh solid rgb(5, 5, 97);
               box-shadow: -.2vh .2vh rgb(5, 5, 97);
               background: #0D6290;
               
@@ -294,6 +295,7 @@
         display: inline-block;
         height: 100%;
         width: 40px;
+        border-top-right-radius: 10px;
         background: linear-gradient(to right,#89061C, rgb(226, 44, 12),#89061C);
         
         &:before {
@@ -330,9 +332,82 @@
       &-wrapper {
         display: block;
         background: rgb(185, 0, 0);
-        width: 300px;
-        height: 460px; // TODO redo
-        border: solid 2px #000 ;
+        width: 325px;
+        height: 405px; // TODO redo
+        z-index: 10;
+        background: linear-gradient(to right, rgb(185, 0, 0) 5%, rgb(226, 44, 12) 10%, rgb(185, 0, 0) 60%, #89061C 100%);
+        border: solid 1px black;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 5px 5px 0vh 2px rgba(0, 0, 0, 0.7);
+        
+        will-change: auto;
+        transform-style: preserve-3d;
+        transform-origin: 0;
+        
+        &--open {
+          animation: poke-open .55s ease-in-out forwards;
+        }
+        &--close {
+          animation: poke-close .55s ease-in-out forwards;
+        }
+      }
+      &-header {
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: 6;
+          top: -50px;
+          left: -1px;
+          height: 40.5px;
+          width: 154px;
+          height: 50px;
+          background: linear-gradient(to right, rgb(185, 0, 0) 10%, rgb(226, 44, 12) 20%, rgb(185, 0, 0) 100%);
+          border-top: 1px solid #000;
+          border-left: 1px solid #000;
+        }
+        &--curve {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: 25%;
+            border-left: 90px solid rgb(185, 0, 0);
+            border-top: 50px solid transparent;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            top: -51px;
+            right: 23.5%;
+            border-left: 90px solid rgba(0, 0, 0, 0.6);
+            border-top: 50px solid transparent;
+            border-top-left-radius: 5px;
+          }
+        }
+        
+      }
+      &-pannel{
+        backface-visibility: hidden;
+      }
+
+    
+      @keyframes poke-open {
+        0% {
+          transform: rotateY(-160deg) translateX(45px);
+        }
+        100% {
+          transform: rotateY(0), rotateX(0);
+        }
+      }
+      @keyframes poke-close {
+        0% {
+          transform: rotateY(0);
+        }
+        100% { // TODO FIX gap when turn
+          transform: rotateY(-160deg) translateX(45px);
+
+        }
       }
     }
   }

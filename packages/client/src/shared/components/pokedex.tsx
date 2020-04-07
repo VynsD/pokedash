@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import * as ANTD from 'antd';
 
 import Pokemons from '../components/queries/pokemons';
@@ -26,7 +26,7 @@ function LeftSide(Props: any) {
           <div className="left-pannel_red-dot left-pannel_red-dot--upper-left"></div>
           <div className="left-pannel_red-dot left-pannel_red-dot--upper-right"></div>
           <div className="left-pannel_screen">
-            {/* METTERE pokemons query result */}
+            {/* METTERE pokemons query result name / img */}
           </div>
           <div className="left-pannel_red-dot left-pannel_red-dot--lower"></div>
           <div className="left-pannel_grill"></div>
@@ -49,11 +49,23 @@ function LeftSide(Props: any) {
 }
 
 function RightSide(Props: any) {
+  // Hooks
+  const [rightPannelState, setRightPannelState] = useState('right-wrapper--open');
+
+  function changePannelState(): void {
+    rightPannelState === 'right-wrapper--open' ? (
+      setRightPannelState('right-wrapper--close')
+    ) : (
+        setRightPannelState('right-wrapper--open')
+      );
+  }
+
   return (
-    <div className="right-wrapper">
+    <div className={'right-wrapper ' + rightPannelState}
+      onClick={() => changePannelState()}
+    >
       <div className="right-header">
-        ::after
-        ::before
+        <div className="right-header--curve"></div>
       </div>
       <div className="right-pannel">
 
