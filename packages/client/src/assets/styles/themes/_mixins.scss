@@ -10,3 +10,58 @@
     height: $width;
   }
 }
+@mixin self-center() {
+  align-self: center;
+  justify-self: center;
+}
+
+// Layout
+@mixin display-flex($direction: null, $align: null, $justify: null) {
+  display: flex;
+
+  @if $direction {
+    flex-direction: $direction; 
+  }
+  @if $align {
+    align-items: $align; 
+  }
+  @if $justify {
+    justify-content: $justify; 
+  }
+}
+
+@mixin display-grid($row-template, $column-template, $gap: null) {
+  display: grid;
+  grid-template-rows: #{$row-template};
+  grid-template-columns: #{$column-template};
+  
+  @if $gap {
+    grid-gap: $gap;
+  }
+}
+
+// Overrides
+@mixin override-btn-color($bkg-color, $text-color) {
+  background-color: $bkg-color;
+  color: $text-color;
+  //* Override
+  &.ant-radio-button-wrapper-checked {
+    color: $bkg-color !important;
+    border-color: $bkg-color !important;
+    background: transparent !important;
+  } //*/
+}
+@mixin override-btn-color-dual($upper-color, $lower-color, $text-color) {
+  background-image: linear-gradient(180deg, $upper-color 50%, $lower-color 50%);
+  color: $text-color;
+  //* Overrides
+  &.ant-radio-button-wrapper-checked {
+    color: $upper-color !important;
+    border-color: $lower-color !important;
+    background: transparent !important;
+  
+    &:not(.ant-radio-button-wrapper-disabled)::before {
+      background-color: $lower-color;
+    }
+  }//*/
+}

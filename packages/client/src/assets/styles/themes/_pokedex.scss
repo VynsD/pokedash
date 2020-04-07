@@ -2,20 +2,16 @@
 .pokedex {
   &-wrapper {
     @include expand-content(100%);
+    @include display-flex(row, flex-end, center);
     margin: 10px; 
     background:linear-gradient( #cacaca 0%, #00ffca 100%);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-
+    
     // Left side
     .left {
       &-wrapper {
         position: relative;
         display: inline-block;
-        width: 350px;
-        height: 500px;
+        @include expand-content(350px, 500px);
         z-index: 1;
         background: linear-gradient(to right, rgb(185, 0, 0) 5%, rgb(226, 44, 12) 10%, rgb(185, 0, 0) 60%, #89061C 100%);
         border: solid 1px black;
@@ -24,12 +20,11 @@
         box-shadow: -5px 5px 0vh 2px rgba(0, 0, 0, .7);
       }
       &-header {
-        height: 50px;
+        @include expand-content(100%, 50px);
         
         &_left {
           &--curve {
-            height: 90px;
-            width: 25%;
+            @include expand-content(25%, 90px);
             z-index: 2;
             background: linear-gradient(to left, rgb(185, 0, 0) 10%, rgb(226, 44, 12) 60%,#89061C 100%);
             border-top-left-radius: 10px;
@@ -38,32 +33,31 @@
             &:after {
               content: "";
               position: absolute;
-              border-left: 146px solid rgba(0, 0, 0, 0.5);
-              border-bottom: 94px solid transparent;
-              height: 0;
               top: 0;
               left: 25%;
               z-index: 2;
+              height: 0;
+              border-left: 146px solid rgba(0, 0, 0, 0.5);
+              border-bottom: 94px solid transparent;
             }
             &:before {
               content: "";
               position: absolute;
-              border-left: 140px solid rgb(185, 0, 0);
-              border-bottom: 90px solid transparent;
-              height: 0;
               top: 0;
               left: 25%;
               z-index: 3;
+              height: 0;
+              border-left: 140px solid rgb(185, 0, 0);
+              border-bottom: 90px solid transparent;
             }
           }
           &--led {
             &-blue {
               position: absolute;
-              height: 50px;
-              width: 50px;
-              z-index: 4;
               top: 15px;
               left: 5.5%;
+              z-index: 4;
+              @include expand-content(50px);
               border-radius: 50%;
               border: 2px solid #fff;
               background: lightblue;
@@ -71,44 +65,40 @@
               &:after {
                 content: "";
                 position: absolute;
-                height: 30px;
-                width: 30px;
-                z-index: 5;
                 top: 5px;
                 right: 5.5%;
+                z-index: 5;
+                @include expand-content(30px);
                 border-radius: 50%;
                 background: linear-gradient(white, transparent);
               }
             }
             &-red {
               position: absolute;
-              height: 15px;
-              width: 15px;
-              z-index: 4;
               top: 10px;
               left: 25%;
+              z-index: 4;
+              @include expand-content(15px);
               border-radius: 50%;
               box-shadow: 0vh 0vh 1vh .15vh rgb(211, 82, 59);
               background: linear-gradient(white,rgb(211, 82, 59),rgb(170, 0, 0));
             }
             &-yellow {
               position: absolute;
-              height: 15px;
-              width: 15px;
-              z-index: 4;
               top: 10px;
               left: 32.5%;
+              z-index: 4;
+              @include expand-content(15px);
               border-radius: 50%;
               box-shadow: 0vh 0vh 1vh .15vh rgb(245, 215, 20);
               background: linear-gradient(white, rgb(240, 225, 22), orange);
             }
             &-green {
               position: absolute;
-              height: 15px;
-              width: 15px;
-              z-index: 4;
               top: 10px;
               left: 40%;
+              z-index: 4;
+              @include expand-content(15px);
               border-radius: 50%;
               box-shadow: 0vh 0vh 1vh .15vh rgb(27, 224, 60);
               background: linear-gradient(white,rgb(24, 190, 24),rgb(37, 136, 53));
@@ -118,11 +108,10 @@
         &_middle {
           &--curve {
             position: absolute;
-            z-index: 4;
             top:0;
             left: 46.5%;
-            height: 40.5px;
-            width: 25%;
+            z-index: 4;
+            @include expand-content(25%, 40.5px);
             background: rgb(185, 0, 0); //linear-gradient(to bottom,white 10%,#DC0A2D 30%);
             box-shadow: 0vh .4vh 0vh 0vh rgba(0, 0, 0, .5)
           }
@@ -130,11 +119,10 @@
         &_right {
           &--curve {
             position: absolute;
-            z-index: 2;
             top:0;
             right:0;
-            height: 40.5px;
-            width: 30%;
+            z-index: 2;
+            @include expand-content(30%, 40.5px);
             background: linear-gradient(to right, rgb(185, 0, 0) 10%, rgb(226, 44, 12) 60%,#89061C 100%);
             border-top-right-radius: 10px;
             box-shadow: 0vh .4vh 0vh 0vh rgba(0, 0, 0, .5)
@@ -142,16 +130,14 @@
         }
       }
       &-pannel {
-        width: 80%;
-        height: 90%;
+        @include expand-content(80%, 90%);
 
         &_frame {
           position: absolute;
           top: 22%;
           right: 15%;
           display: inline-block;
-          height: 260px;
-          width: 80%;
+          @include expand-content(80%, 260px);
           z-index: 1;
           background: linear-gradient(to right,rgb(235, 235, 235) 20%, white 50%,rgb(235, 235, 235),lightgray 100%);
           border-radius: 10px;
@@ -163,16 +149,14 @@
           right: 5%;
           z-index: 2;
           display: inline-block;
-          height: 60%;
-          width: 90%;
+          @include expand-content(90%, 60%);
           border: .3vh solid GRAY;
           border-radius: 2vh;
           background: #82c721;
           box-shadow: -0.2vh 0.2vh 0vh 0.2vh rgba(0, 0, 0, 0.2) inset, 0vh 0vh 2vh 0.2vh #82c721
         }
         &_red-dot {
-          height: 15px;
-          width: 15px;
+          @include expand-content(15px);
           z-index: 2;
           border-radius: 100vh;
           background: tomato;
@@ -194,16 +178,14 @@
             position: absolute;
             bottom: 8%;
             left: 17%;
-            height: 25px;
-            width: 25px;
+            @include expand-content(25px);
           }
         }
         &_grill {
           position: absolute;
           bottom: 20%;
           right: 5%;
-          height: 5px;
-          width: 50px;
+          @include expand-content(50px, 5px);
           border-radius: 30px;
           box-shadow: 0vh 1vh white,
                       0.5vh 1.5vh grey,
@@ -217,8 +199,7 @@
             position: absolute;
             bottom: 10%;
             left: 7%;
-            height: 40px;
-            width: 40px;
+            @include expand-content(40px);
             z-index: 3;
             border-radius: 50%;
             background: rgba(0, 0, 0, 0.8);
@@ -231,8 +212,7 @@
               bottom: 20%;
               left: 25%;
               z-index: 3;
-              height: 15px;
-              width: 60px;
+              @include expand-content(60px, 15px);
               border-radius: 5vh;
               border: .2vh solid darkred;
               background: #FF002B;
@@ -243,8 +223,7 @@
               bottom: 20%;
               left: 45%;
               z-index: 3;
-              height: 15px;
-              width: 60px;
+              @include expand-content(60px, 15px);
               border-radius: 5vh;
               border: .2vh solid rgb(5, 5, 97);
               box-shadow: -.2vh .2vh rgb(5, 5, 97);
@@ -255,8 +234,7 @@
               position: absolute;
               bottom: 6%;
               left: 25%;
-              width: 120px;
-              height: 50px;
+              @include expand-content(120px, 50px);
               border: .3vh solid GRAY;
               border-radius: 10px;
               background: #82c721;
@@ -270,8 +248,7 @@
               position: absolute;
               bottom: 6%;
               right: 22%;
-              height: 70px;
-              width: 20px;
+              @include expand-content(20px, 70px);
               background: rgba(0, 0, 0, 0.8);
               box-shadow: -.2vh .2vh rgba(0, 0, 0, 0.6);
             }
@@ -290,8 +267,7 @@
         bottom: 0;
         right: 0;
         display: inline-block;
-        height: 100%;
-        width: 40px;
+        @include expand-content(40px, 100%);
         border-top-right-radius: 10px;
         background: linear-gradient(to right,#89061C, rgb(226, 44, 12),#89061C);
         
@@ -301,12 +277,11 @@
           right: 0;
           bottom: 20%;
           display: inline-block;
-          height: 30px;
-          width: 40px;
+          @include expand-content(40px, 30px);
+          z-index: 0;
           border-top: .3vh solid #89061C;
           border-bottom: .3vh solid #89061C;
           background: linear-gradient(to right,#89061C,  rgb(245, 74, 44),#89061C);
-          z-index:0;
         }
         &:after {
           content:"";
@@ -314,12 +289,11 @@
           top: 30%;
           right: 0;
           display: inline-block;
-          height: 30px;
-          width: 40px;
+          @include expand-content(40px, 30px);
+          z-index: 1;
           border-top: .3vh solid #89061C;
           border-bottom: .3vh solid #89061C;
           background: linear-gradient(to right,#89061C, rgb(245, 74, 44),#89061C);
-          z-index:1;
         }
       }
     }
@@ -329,8 +303,7 @@
       &-wrapper {
         display: block;
         background: rgb(185, 0, 0);
-        width: 325px;
-        height: 405px;
+        @include expand-content(325px, 405px);
         z-index: 10;
         background: linear-gradient(to right, rgb(185, 0, 0) 5%, rgb(226, 44, 12) 10%, rgb(185, 0, 0) 60%, #89061C 100%);
         border: solid 1px black;
@@ -355,9 +328,7 @@
           z-index: 6;
           top: -50px;
           left: -1px;
-          height: 40.5px;
-          width: 154px;
-          height: 50px;
+          @include expand-content(154px, 50px);
           background: linear-gradient(to right, rgb(185, 0, 0) 10%, rgb(226, 44, 12) 20%, rgb(185, 0, 0) 100%);
           border-top: 1px solid #000;
           border-left: 1px solid #000;
@@ -384,14 +355,13 @@
         
       }
       &-pannel {
-        width: 100%;
-        height: 100%;
+        @include expand-content(100%);
         backface-visibility: hidden;
 
         &_rotated {
           transform: rotateY(180deg);
           backface-visibility: hidden;
-          
+
           &--arrow {
             position: absolute;
             top: 40%;
@@ -420,8 +390,7 @@
             position: absolute;
             bottom: 5%;
             right: 20%;
-            width: 60%;
-            height: 10px;
+            @include expand-content(60%, 10px);
             border-radius: 20px;
             border: .2vh solid rgba(0, 0, 0, 0.6);
             box-shadow: -.2vh .2vh rgba(0, 0, 0, 0.6);
@@ -433,8 +402,7 @@
           right: 5%;
           z-index: 2;
           display: inline-block;
-          height: 80px;
-          width: 90%;
+          @include expand-content(90%, 80px);
           border: .3vh solid GRAY;
           border-radius: 2vh;
           background: #82c721;
@@ -444,12 +412,8 @@
           position: absolute;
           top: 30%;
           right: 5%;
-          height: 80px;
-          width: 90%;
-          display: grid;
-          grid-template-rows: 1fr 1fr;
-          grid-template-columns: repeat(5, 1fr);
-          grid-gap: 1px;
+          @include expand-content(90%, 80px);
+          @include display-grid(1fr 1fr, repeat(5, 1fr), 1px);
           background: rgb(8, 173, 250);
 
           .singleBtn {
@@ -471,22 +435,16 @@
           position: absolute;
           top: 55%;
           right: 5%;
-          height: 80px;
-          width: 90%;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: 20% 80%;
+          @include expand-content(90%, 80px);
+          @include display-grid(20% 80%, repeat(2, 1fr) );
 
           &--left {
             grid-area: 1 / 1 / 3 / 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include display-flex(row, center, center);
 
             .whiteBtn {
               content: "";
-              width: 60px;
-              height: 40px;
+              @include expand-content(60px, 40px);
               background: #fff;
               border: 1px solid rgba(0, 0, 0, .7);
               box-shadow: .2vh .2vh 0vh .2vh rgba(0, 0, 0, 0.6);
@@ -495,24 +453,19 @@
           &--right {
             &-upper {
               grid-area: 1 / 2 / 2 / 3;
-              display: flex;
-              align-items: center;
-              justify-content: space-evenly;
+              @include display-flex(row, center, space-evenly);
             }
             &-lower {
               grid-area: 2 / 2 / 3 / 3;
-              display: flex;
-              align-items: center;
-              justify-content: right;
+              @include display-flex(row, center, right);
 
               .led {
                 &-yellow {
                   position: absolute;
-                  height: 30px;
-                  width: 30px;
-                  z-index: 7;
                   top: 45px;
                   right: 5%;
+                  z-index: 7;
+                  @include expand-content(30px);
                   border-radius: 50%;
                   box-shadow: 0vh 0vh 1vh .15vh rgb(245, 215, 20);
                   background: linear-gradient(white, rgb(240, 225, 22), orange);
@@ -520,11 +473,10 @@
                   &:after {
                     content: "";
                     position: absolute;
-                    height: 15px;
-                    width: 15px;
-                    z-index: 5;
                     top: 5px;
                     right: 5.5%;
+                    z-index: 5;
+                    @include expand-content(15px);
                     border-radius: 50%;
                     background: linear-gradient(white, transparent);
                   }
@@ -537,38 +489,29 @@
           position: absolute;
           bottom: 5%;
           right: 5%;
-          height: 80px;
-          width: 90%;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: 100%;
+          @include expand-content(90%, 80px);
+          @include display-grid(100%, repeat(2, 1fr) );
 
           &--left {
             grid-area: 1 / 1 / 2 / 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include display-flex(row, center, center);
           }
           &--right {
             grid-area: 1 / 2 / 2 / 3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include display-flex(row, center, center);
           }
           
         }
 
         .blackBtn {
           content: "";
-          width: 60px;
-          height: 40px;
+          @include expand-content(60px, 40px);
           background: rgba(0, 0, 0, .9);
           border: 1px solid rgba(0, 0, 0, .7);
           box-shadow: .2vh .2vh 0vh .2vh rgba(0, 0, 0, 0.6);
           
           &-slim {
-            height: 15px;
-            width: 60px;
+            @include expand-content(60px, 15px);
             border-radius: 5vh;
             border: .2vh solid rgba(0, 0, 0, 0.6);
             background: rgba(0, 0, 0, 0.8);
