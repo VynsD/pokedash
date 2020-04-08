@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component, useState } from 'react';
 import * as ANTD from 'antd';
 import PokemonsByNumber from './queries/pokemonsByNumber';
 
@@ -9,7 +9,7 @@ type PokedexState = {
 
 function LeftSide(Props: any) {
   // Hooks
-  const [leftSideState, setLeftSideState] = useState(Props);
+  const [leftSideState] = useState(Props);
 
   return (
     <div className="left-wrapper">

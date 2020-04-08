@@ -46,14 +46,6 @@ function PokemonsByType(props: any) {
   if (loading) return <Loading />
   // Error Template
   if (error) return <ErrorNotFound {...ErrorProps} />
-  // Pagination Template
-  const Pagination = () => {
-    return (
-      <div>
-        <span>paginator</span>
-      </div>
-    );
-  }
   // Success Template
   return (
     <div className="grid-wrapper">
@@ -88,7 +80,6 @@ function PokemonsByType(props: any) {
                 </div>
               }>
             </ANTD.Card.Meta>
-            {/*<Pagination /> NOT HERE*/}
           </ANTD.Card>
         )
       }

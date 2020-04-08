@@ -181,6 +181,26 @@
               filter: grayscale(1.0);
             }
           }
+          .error {
+            &-wrapper {
+            @include expand-content(100%);
+            @include self-center();
+            @include display-grid(50% 50%, 100%);
+            font-family: Courier;
+            //color: rgba(0, 0, 0, 0.6);
+            background: transparent;
+            }
+            &-header {
+              @include display-flex(column);
+              color: rgba(0, 0, 0, 0.6);
+              margin: 0;
+              margin-top: 10px;
+            }
+            &-img {
+              grid-area: 2 / 1 / 3 / 2;
+              filter: grayscale(1); 
+            }
+          }
         }
         &_red-dot {
           @include expand-content(15px);
@@ -276,7 +296,7 @@
                   margin-right: 3%;
                   background: transparent;
                   border: 1px solid gray;
-                  
+
                   &-handler {
                     &-wrap {
                       background: transparent;
@@ -478,6 +498,20 @@
             @include expand-content(100%, 80%);
             color: rgba(0, 0, 0, 0.6);
             font-size: 18px;
+          }
+          .error {
+            &-wrapper {
+            @include expand-content(100%);
+            @include display-flex();
+            font-family: Courier;
+            color: rgba(0, 0, 0, 0.6);
+            background: transparent;
+            }
+            &-message {
+              @include expand-content(90%, 100%);
+              @include display-flex(column);
+              font-size: 14px;
+            }
           }
           //*/
         }

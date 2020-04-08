@@ -40,12 +40,13 @@ function PokemonsByNumber(props: any) {
     variables: { q, after, limit },
   });
   const ErrorProps = {
-    reserchType: 'ByName'
+    reserchType: 'ByNumber',
+    typeData: typeData
   }
   // Loading Template
   if (loading) return <Loading />
   // Error Template
-  if (error) return <ErrorNotFound {...ErrorProps} /> // TODO FIX
+  if (error) return <ErrorNotFound {...ErrorProps} />
 
   // Success Template
   return (
