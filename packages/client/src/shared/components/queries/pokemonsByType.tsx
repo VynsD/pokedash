@@ -80,8 +80,8 @@ function PokemonsByType(props: any) {
                   </div>
                   <div className="card-description--types">
                     {
-                      node.types.map((el) => {
-                        return <span className="types-label">{el}</span>
+                      node.types.map((el, i) => {
+                        return <span key={i} className="types-label">{el}</span>
                       })
                     }
                   </div>
