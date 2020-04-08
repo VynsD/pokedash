@@ -5,7 +5,7 @@ export const data = [
     classification: "Seed Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/bulbasaur.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/a3/Spr_1b_001.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -73,7 +73,7 @@ export const data = [
     classification: "Seed Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/ivysaur.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/ivysaur.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/58/Spr_1b_002.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -143,7 +143,7 @@ export const data = [
     classification: "Seed Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/venusaur-f.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/venusaur.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f6/Spr_1b_003.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -207,7 +207,7 @@ export const data = [
     classification: "Lizard Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/charmander.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/charmander.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/9d/Spr_1b_004.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -275,7 +275,7 @@ export const data = [
     classification: "Flame Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/charmeleon.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/charmeleon.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/6a/Spr_1b_005.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -345,7 +345,7 @@ export const data = [
     classification: "Flame Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/charizard.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/56/Spr_1b_006.png"
     },
     types: ["Fire", "Flying"],
     resistant: ["Fire", "Grass", "Fighting", "Bug", "Steel", "Fairy"],
@@ -409,7 +409,7 @@ export const data = [
     classification: "Tiny Turtle Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/squirtle.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/squirtle.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/30/Spr_1b_007.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -477,7 +477,7 @@ export const data = [
     classification: "Turtle Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/wartortle.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/wartortle.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d3/Spr_1b_008.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -552,7 +552,7 @@ export const data = [
     classification: "Shellfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/blastoise.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/2c/Spr_1b_009.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -621,7 +621,7 @@ export const data = [
     classification: "Worm Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/caterpie.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/caterpie.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/5a/Spr_1b_010.png"
     },
     types: ["Bug"],
     resistant: ["Grass", "Fighting", "Ground"],
@@ -679,7 +679,7 @@ export const data = [
     classification: "Cocoon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white//anim/normal/metapod.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/metapod.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/ef/Spr_1b_011.png"
     },
     types: ["Bug"],
     resistant: ["Grass", "Fighting", "Ground"],
@@ -739,7 +739,7 @@ export const data = [
     classification: "Butterfly Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/butterfree-f.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/butterfree.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/fa/Spr_1b_012.png"
     },
     types: ["Bug", "Flying"],
     resistant: ["Grass", "Fighting", "Ground", "Bug"],
@@ -803,7 +803,7 @@ export const data = [
     classification: "Hairy Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/weedle.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/weedle.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/da/Spr_1b_013.png"
     },
     types: ["Bug", "Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -861,7 +861,7 @@ export const data = [
     classification: "Cocoon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/kakuna.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/kakuna.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/06/Spr_1b_014.png"
     },
     types: ["Bug", "Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -921,7 +921,7 @@ export const data = [
     classification: "Poison Bee Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/beedrill.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/beedrill.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/45/Spr_1b_015.png"
     },
     types: ["Bug", "Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -985,7 +985,7 @@ export const data = [
     classification: "Tiny Bird Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/pidgey.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/pidgey.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/cd/Spr_1b_016.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -1053,7 +1053,7 @@ export const data = [
     classification: "Bird Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/pidgeotto.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/pidgeotto.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/07/Spr_1b_017.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -1123,7 +1123,7 @@ export const data = [
     classification: "Bird Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/pidgeot.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/pidgeot.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/c0/Spr_1b_018.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -1187,7 +1187,7 @@ export const data = [
     classification: "Mouse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/rattata.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/rattata.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/95/Spr_1b_019.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -1251,7 +1251,7 @@ export const data = [
     classification: "Mouse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/raticate.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/raticate.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/ea/Spr_1b_020.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -1311,7 +1311,7 @@ export const data = [
     classification: "Tiny Bird Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/spearow.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/spearow.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/81/Spr_1b_021.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -1375,7 +1375,7 @@ export const data = [
     classification: "Beak Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/fearow.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/fearow.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/8c/Spr_1b_022.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -1435,7 +1435,7 @@ export const data = [
     classification: "Snake Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/ekans.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/ekans.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/58/Spr_1b_023.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -1499,7 +1499,7 @@ export const data = [
     classification: "Cobra Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/arbok.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/arbok.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/39/Spr_1b_024.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -1559,7 +1559,7 @@ export const data = [
     classification: "Mouse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/pikachu.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/ba/Spr_1b_025.png"
     },
     types: ["Electric"],
     resistant: ["Electric", "Flying", "Steel"],
@@ -1623,7 +1623,7 @@ export const data = [
     classification: "Mouse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/raichu.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/raichu.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/53/Spr_1b_026.png"
     },
     types: ["Electric"],
     resistant: ["Electric", "Flying", "Steel"],
@@ -1683,7 +1683,7 @@ export const data = [
     classification: "Mouse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/sandshrew.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/sandshrew.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/fe/Spr_1b_027.png"
     },
     types: ["Ground"],
     resistant: ["Electric", "Poison", "Rock"],
@@ -1747,7 +1747,7 @@ export const data = [
     classification: "Mouse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/sandslash.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/sandslash.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/60/Spr_1b_028.png"
     },
     types: ["Ground"],
     resistant: ["Electric", "Poison", "Rock"],
@@ -1807,7 +1807,7 @@ export const data = [
     classification: "Poison Pin Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/nidoran-f.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/nidoran-f.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/48/Spr_1b_029.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -1875,7 +1875,7 @@ export const data = [
     classification: "Poison Pin Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/nidorina.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/nidorina.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/b3/Spr_1b_030.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -1945,7 +1945,7 @@ export const data = [
     classification: "Drill Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/nidoqueen.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/nidoqueen.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/e9/Spr_1b_031.png"
     },
     types: ["Poison", "Ground"],
     resistant: ["Electric", "Fighting", "Poison", "Bug", "Rock", "Fairy"],
@@ -2009,7 +2009,7 @@ export const data = [
     classification: "Poison Pin Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/nidoran-m.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/nidoran-m.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/32/Spr_1b_032.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -2077,7 +2077,7 @@ export const data = [
     classification: "Poison Pin Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/nidorino.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/nidorino.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/5b/Spr_1b_033.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -2147,7 +2147,7 @@ export const data = [
     classification: "Drill Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/nidoking.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/nidoking.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/b8/Spr_1b_034.png"
     },
     types: ["Poison", "Ground"],
     resistant: ["Electric", "Fighting", "Poison", "Bug", "Rock", "Fairy"],
@@ -2211,7 +2211,7 @@ export const data = [
     classification: "Fairy Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/clefairy.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/clefairy.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/08/Spr_1b_035.png"
     },
     types: ["Fairy"],
     resistant: ["Fighting", "Bug", "Dragon", "Dark"],
@@ -2275,7 +2275,7 @@ export const data = [
     classification: "Fairy Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/clefable.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/clefable.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/25/Spr_1b_036.png"
     },
     types: ["Fairy"],
     resistant: ["Fighting", "Bug", "Dragon", "Dark"],
@@ -2335,7 +2335,7 @@ export const data = [
     classification: "Fox Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/vulpix.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/vulpix.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/ec/Spr_1b_037.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -2399,7 +2399,7 @@ export const data = [
     classification: "Fox Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/ninetales.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/ninetales.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/48/Spr_1b_038.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -2459,7 +2459,7 @@ export const data = [
     classification: "Balloon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/jigglypuff.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/jigglypuff.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/2f/Spr_1b_039.png"
     },
     types: ["Normal", "Fairy"],
     resistant: ["Bug", "Ghost", "Dragon", "Dark"],
@@ -2523,7 +2523,7 @@ export const data = [
     classification: "Balloon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/wigglytuff.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/wigglytuff.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/39/Spr_1b_040.png"
     },
     types: ["Normal", "Fairy"],
     resistant: ["Bug", "Ghost", "Dragon", "Dark"],
@@ -2583,7 +2583,7 @@ export const data = [
     classification: "Bat Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/zubat.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/zubat.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f7/Spr_1b_041.png"
     },
     types: ["Poison", "Flying"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -2647,7 +2647,7 @@ export const data = [
     classification: "Bat Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/golbat.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/golbat.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/23/Spr_1b_042.png"
     },
     types: ["Poison", "Flying"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -2707,7 +2707,7 @@ export const data = [
     classification: "Weed Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/oddish.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/oddish.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/a6/Spr_1b_043.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -2775,7 +2775,7 @@ export const data = [
     classification: "Weed Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/gloom.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/gloom.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/32/Spr_1b_044.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -2845,7 +2845,7 @@ export const data = [
     classification: "Flower Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/vileplume.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/vileplume.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/20/Spr_1b_045.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -2909,7 +2909,7 @@ export const data = [
     classification: "Mushroom Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/paras.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/paras.png"
+      old: "https://archives.bulbagarden.net/media/upload/7/74/Spr_1b_046.png"
     },
     types: ["Bug", "Grass"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Ground"],
@@ -2973,7 +2973,7 @@ export const data = [
     classification: "Mushroom Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/parasect.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/parasect.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/54/Spr_1b_047.png"
     },
     types: ["Bug", "Grass"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Ground"],
@@ -3033,7 +3033,7 @@ export const data = [
     classification: "Insect Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/venonat.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/venonat.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d7/Spr_1b_048.png"
     },
     types: ["Bug", "Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -3097,7 +3097,7 @@ export const data = [
     classification: "Poison Moth Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/venomoth.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/venomoth.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/28/Spr_1b_049.png"
     },
     types: ["Bug", "Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -3157,7 +3157,7 @@ export const data = [
     classification: "Mole Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/diglett.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/diglett.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/85/Spr_1b_050.png"
     },
     types: ["Ground"],
     resistant: ["Electric", "Poison", "Rock"],
@@ -3221,7 +3221,7 @@ export const data = [
     classification: "Mole Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/dugtrio.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/dugtrio.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/e5/Spr_1b_051.png"
     },
     types: ["Ground"],
     resistant: ["Electric", "Poison", "Rock"],
@@ -3281,7 +3281,7 @@ export const data = [
     classification: "Scratch Cat Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/meowth.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/meowth.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/4d/Spr_1b_052.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -3345,7 +3345,7 @@ export const data = [
     classification: "Classy Cat Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/persian.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/persian.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/55/Spr_1b_053.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -3405,7 +3405,7 @@ export const data = [
     classification: "Duck Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/psyduck.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/psyduck.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/a3/Spr_1b_054.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -3469,7 +3469,7 @@ export const data = [
     classification: "Duck Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/golduck.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/golduck.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/51/Spr_1b_055.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -3534,7 +3534,7 @@ export const data = [
     classification: "Pig Monkey Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/mankey.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/mankey.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f5/Spr_1b_056.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -3598,7 +3598,7 @@ export const data = [
     classification: "Pig Monkey Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/primeape.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/primeape.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/28/Spr_1b_057.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -3658,7 +3658,7 @@ export const data = [
     classification: "Puppy Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/growlithe.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/growlithe.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/cc/Spr_1b_058.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -3722,7 +3722,7 @@ export const data = [
     classification: "Legendary Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/arcanine.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/arcanine.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/1b/Spr_1b_059.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -3782,7 +3782,7 @@ export const data = [
     classification: "Tadpole Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/poliwag.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/poliwag.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/c9/Spr_1b_060.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -3850,7 +3850,7 @@ export const data = [
     classification: "Tadpole Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/poliwhirl.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/poliwhirl.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/bf/Spr_1b_061.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -3920,7 +3920,7 @@ export const data = [
     classification: "Tadpole Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/poliwrath.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/poliwrath.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/67/Spr_1b_062.png"
     },
     types: ["Water", "Fighting"],
     resistant: ["Fire", "Water", "Ice", "Bug", "Rock", "Dark", "Steel"],
@@ -3984,7 +3984,7 @@ export const data = [
     classification: "Psi Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/abra.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/abra.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/36/Spr_1b_063.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
@@ -4048,7 +4048,7 @@ export const data = [
     classification: "Psi Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/kadabra.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/kadabra.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d6/Spr_1b_064.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
@@ -4118,7 +4118,7 @@ export const data = [
     classification: "Psi Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/alakazam.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/alakazam.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d6/Spr_1b_065.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
@@ -4182,7 +4182,7 @@ export const data = [
     classification: "Superpower Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/machop.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/machop.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/b2/Spr_1b_066.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -4250,7 +4250,7 @@ export const data = [
     classification: "Superpower Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/machoke.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/machoke.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/5a/Spr_1b_067.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -4320,7 +4320,7 @@ export const data = [
     classification: "Superpower Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/machamp.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/machamp.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d9/Spr_1b_068.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -4384,7 +4384,7 @@ export const data = [
     classification: "Flower Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/bellsprout.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/bellsprout.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/86/Spr_1b_069.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -4452,7 +4452,7 @@ export const data = [
     classification: "Flycatcher Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/weepinbell.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/weepinbell.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/ad/Spr_1b_070.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -4522,7 +4522,7 @@ export const data = [
     classification: "Flycatcher Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/victreebel.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/victreebel.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/c4/Spr_1b_071.png"
     },
     types: ["Grass", "Poison"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Fairy"],
@@ -4586,7 +4586,7 @@ export const data = [
     classification: "Jellyfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/tentacool.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/tentacool.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/df/Spr_1b_072.png"
     },
     types: ["Water", "Poison"],
     resistant: [
@@ -4659,7 +4659,7 @@ export const data = [
     classification: "Jellyfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/tentacruel.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/tentacruel.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/8e/Spr_1b_073.png"
     },
     types: ["Water", "Poison"],
     resistant: [
@@ -4728,7 +4728,7 @@ export const data = [
     classification: "Rock Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/geodude.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/geodude.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/4c/Spr_1b_074.png"
     },
     types: ["Rock", "Ground"],
     resistant: ["Normal", "Fire", "Electric", "Poison", "Flying", "Rock"],
@@ -4796,7 +4796,7 @@ export const data = [
     classification: "Rock Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/graveler.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/graveler.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/3c/Spr_1b_075.png"
     },
     types: ["Rock", "Ground"],
     resistant: ["Normal", "Fire", "Electric", "Poison", "Flying", "Rock"],
@@ -4866,7 +4866,7 @@ export const data = [
     classification: "Megaton Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/golem.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/golem.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/9c/Spr_1b_076.png"
     },
     types: ["Rock", "Ground"],
     resistant: ["Normal", "Fire", "Electric", "Poison", "Flying", "Rock"],
@@ -4930,7 +4930,7 @@ export const data = [
     classification: "Fire Horse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/ponyta.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/ponyta.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/a4/Spr_1b_077.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -4994,7 +4994,7 @@ export const data = [
     classification: "Fire Horse Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/rapidash.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/rapidash.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/33/Spr_1b_078.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -5054,7 +5054,7 @@ export const data = [
     classification: "Dopey Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/slowpoke.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/slowpoke.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/0c/Spr_1b_079.png"
     },
     types: ["Water", "Psychic"],
     resistant: ["Fire", "Water", "Ice", "Fighting", "Psychic", "Steel"],
@@ -5118,7 +5118,7 @@ export const data = [
     classification: "Hermit Crab Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/slowbro.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/slowbro.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/8c/Spr_1b_080.png"
     },
     types: ["Water", "Psychic"],
     resistant: ["Fire", "Water", "Ice", "Fighting", "Psychic", "Steel"],
@@ -5178,7 +5178,7 @@ export const data = [
     classification: "Magnet Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/magnemite.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/magnemite.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/10/Spr_1b_081.png"
     },
     types: ["Electric", "Steel"],
     resistant: [
@@ -5255,7 +5255,7 @@ export const data = [
     classification: "Magnet Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/magneton.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/magneton.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/98/Spr_1b_082.png"
     },
     types: ["Electric", "Steel"],
     resistant: [
@@ -5328,7 +5328,7 @@ export const data = [
     classification: "Wild Duck Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/farfetchd.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/farfetchd.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/eb/Spr_1b_083.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -5381,7 +5381,7 @@ export const data = [
     classification: "Twin Bird Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/doduo.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/doduo.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/b0/Spr_1b_084.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -5445,7 +5445,7 @@ export const data = [
     classification: "Triple Bird Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/dodrio.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/dodrio.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/43/Spr_1b_085.png"
     },
     types: ["Normal", "Flying"],
     resistant: ["Grass", "Ground", "Bug", "Ghost"],
@@ -5505,7 +5505,7 @@ export const data = [
     classification: "Sea Lion Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/seel.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/seel.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/39/Spr_1b_086.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -5569,7 +5569,7 @@ export const data = [
     classification: "Sea Lion Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/dewgong.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/dewgong.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/64/Spr_1b_087.png"
     },
     types: ["Water", "Ice"],
     resistant: ["Water", "Ice"],
@@ -5629,7 +5629,7 @@ export const data = [
     classification: "Sludge Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/grimer.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/grimer.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/80/Spr_1b_088.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -5693,7 +5693,7 @@ export const data = [
     classification: "Sludge Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/muk.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/muk.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/af/Spr_1b_089.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -5753,7 +5753,7 @@ export const data = [
     classification: "Bivalve Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/shellder.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/shellder.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/20/Spr_1b_090.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -5817,7 +5817,7 @@ export const data = [
     classification: "Bivalve Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/cloyster.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/cloyster.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/45/Spr_1b_091.png"
     },
     types: ["Water", "Ice"],
     resistant: ["Water", "Ice"],
@@ -5877,7 +5877,7 @@ export const data = [
     classification: "Gas Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/gastly.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/gastly.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/ce/Spr_1b_092.png"
     },
     types: ["Ghost", "Poison"],
     resistant: ["Normal", "Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -5945,7 +5945,7 @@ export const data = [
     classification: "Gas Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/haunter.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/haunter.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/e5/Spr_1b_093.png"
     },
     types: ["Ghost", "Poison"],
     resistant: ["Normal", "Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -6015,7 +6015,7 @@ export const data = [
     classification: "Shadow Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/gengar.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/gengar.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/b9/Spr_1b_094.png"
     },
     types: ["Ghost", "Poison"],
     resistant: ["Normal", "Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -6079,7 +6079,7 @@ export const data = [
     classification: "Rock Snake Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/onix.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/onix.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f1/Spr_1b_095.png"
     },
     types: ["Rock", "Ground"],
     resistant: ["Normal", "Fire", "Electric", "Poison", "Flying", "Rock"],
@@ -6133,7 +6133,7 @@ export const data = [
     classification: "Hypnosis Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/drowzee.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/drowzee.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/10/Spr_1b_096.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
@@ -6197,7 +6197,7 @@ export const data = [
     classification: "Hypnosis Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/hypno.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/hypno.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/09/Spr_1b_097.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
@@ -6257,7 +6257,7 @@ export const data = [
     classification: "River Crab Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/krabby.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/krabby.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/a8/Spr_1b_098.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -6321,7 +6321,7 @@ export const data = [
     classification: "Pincer Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/kingler.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/kingler.png"
+      old: "https://archives.bulbagarden.net/media/upload/a/a4/Spr_1b_099.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -6381,7 +6381,7 @@ export const data = [
     classification: "Ball Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/voltorb.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/voltorb.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f5/Spr_1b_100.png"
     },
     types: ["Electric"],
     resistant: ["Electric", "Flying", "Steel"],
@@ -6445,7 +6445,7 @@ export const data = [
     classification: "Ball Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/electrode.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/electrode.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f9/Spr_1b_101.png"
     },
     types: ["Electric"],
     resistant: ["Electric", "Flying", "Steel"],
@@ -6505,7 +6505,7 @@ export const data = [
     classification: "Egg Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/exeggcute.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/exeggcute.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/6a/Spr_1b_102.png"
     },
     types: ["Grass", "Psychic"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Ground", "Psychic"],
@@ -6564,7 +6564,7 @@ export const data = [
     classification: "Coconut Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/exeggutor.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/exeggutor.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d2/Spr_1b_103.png"
     },
     types: ["Grass", "Psychic"],
     resistant: ["Water", "Electric", "Grass", "Fighting", "Ground", "Psychic"],
@@ -6624,7 +6624,7 @@ export const data = [
     classification: "Lonely Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/cubone.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/cubone.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/56/Spr_1b_104.png"
     },
     types: ["Ground"],
     resistant: ["Electric", "Poison", "Rock"],
@@ -6688,7 +6688,7 @@ export const data = [
     classification: "Bone Keeper Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/marowak.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/marowak.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/93/Spr_1b_105.png"
     },
     types: ["Ground"],
     resistant: ["Electric", "Poison", "Rock"],
@@ -6748,7 +6748,7 @@ export const data = [
     classification: "Kicking Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/hitmonlee.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/hitmonlee.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/85/Spr_1b_106.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -6802,7 +6802,7 @@ export const data = [
     classification: "Punching Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/hitmonchan.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/hitmonchan.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/6c/Spr_1b_107.png"
     },
     types: ["Fighting"],
     resistant: ["Bug", "Rock", "Dark"],
@@ -6861,7 +6861,7 @@ export const data = [
     classification: "Licking Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/lickitung.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/lickitung.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/07/Spr_1b_108.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -6915,7 +6915,7 @@ export const data = [
     classification: "Poison Gas Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/koffing.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/koffing.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/e9/Spr_1b_109.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -6979,7 +6979,7 @@ export const data = [
     classification: "Poison Gas Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/weezing.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/weezing.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/1b/Spr_1b_110.png"
     },
     types: ["Poison"],
     resistant: ["Grass", "Fighting", "Poison", "Bug", "Fairy"],
@@ -7039,7 +7039,7 @@ export const data = [
     classification: "Spikes Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/rhyhorn.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/rhyhorn.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/90/Spr_1b_111.png"
     },
     types: ["Ground", "Rock"],
     resistant: ["Normal", "Fire", "Electric", "Poison", "Flying", "Rock"],
@@ -7103,7 +7103,7 @@ export const data = [
     classification: "Drill Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/rhydon.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/rhydon.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/8c/Spr_1b_112.png"
     },
     types: ["Ground", "Rock"],
     resistant: ["Normal", "Fire", "Electric", "Poison", "Flying", "Rock"],
@@ -7163,7 +7163,7 @@ export const data = [
     classification: "Egg Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/chansey.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/chansey.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/cf/Spr_1b_113.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -7217,7 +7217,7 @@ export const data = [
     classification: "Vine Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/tangela.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/tangela.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/e3/Spr_1b_114.png"
     },
     types: ["Grass"],
     resistant: ["Water", "Electric", "Grass", "Ground"],
@@ -7266,7 +7266,7 @@ export const data = [
     classification: "Parent Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/kangaskhan.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/kangaskhan.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/8e/Spr_1b_115.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -7323,7 +7323,7 @@ export const data = [
     classification: "Dragon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/horsea.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/horsea.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/c4/Spr_1b_116.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -7387,7 +7387,7 @@ export const data = [
     classification: "Dragon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/seadra.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/seadra.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/de/Spr_1b_117.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -7447,7 +7447,7 @@ export const data = [
     classification: "Goldfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/goldeen.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/goldeen.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/98/Spr_1b_118.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -7511,7 +7511,7 @@ export const data = [
     classification: "Goldfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/seaking.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/seaking.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/dd/Spr_1b_119.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -7571,7 +7571,7 @@ export const data = [
     classification: "Starshape Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/staryu.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/staryu.png"
+      old: "https://archives.bulbagarden.net/media/upload/9/9f/Spr_1b_120.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -7635,7 +7635,7 @@ export const data = [
     classification: "Mysterious Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/starmie.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/starmie.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/fd/Spr_1b_121.png"
     },
     types: ["Water", "Psychic"],
     resistant: ["Fire", "Water", "Ice", "Fighting", "Psychic", "Steel"],
@@ -7695,7 +7695,7 @@ export const data = [
     classification: "Barrier Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/mr-mime.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/mr-mime.png"
+      old: "https://archives.bulbagarden.net/media/upload/8/80/Spr_1b_122.png"
     },
     types: ["Psychic", "Fairy"],
     resistant: ["Fighting", "Psychic", "Dragon"],
@@ -7752,7 +7752,7 @@ export const data = [
     classification: "Mantis Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/scyther.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/scyther.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/0f/Spr_1b_123.png"
     },
     types: ["Bug", "Flying"],
     resistant: ["Grass", "Fighting", "Ground", "Bug"],
@@ -7806,7 +7806,7 @@ export const data = [
     classification: "Humanshape Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/jynx.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/jynx.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/27/Spr_1b_124.png"
     },
     types: ["Ice", "Psychic"],
     resistant: ["Ice", "Psychic"],
@@ -7860,7 +7860,7 @@ export const data = [
     classification: "Electric Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/electabuzz.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/electabuzz.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/1e/Spr_1b_125.png"
     },
     types: ["Electric"],
     resistant: ["Electric", "Flying", "Steel"],
@@ -7914,7 +7914,7 @@ export const data = [
     classification: "Spitfire Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/magmar.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/magmar.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/63/Spr_1b_126.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -7968,7 +7968,7 @@ export const data = [
     classification: "Stagbeetle Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/pinsir.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/pinsir.png"
+      old: "https://archives.bulbagarden.net/media/upload/7/70/Spr_1b_127.png"
     },
     types: ["Bug"],
     resistant: ["Grass", "Fighting", "Ground"],
@@ -8022,7 +8022,7 @@ export const data = [
     classification: "Wild Bull Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/tauros.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/tauros.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/14/Spr_1b_128.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -8079,7 +8079,7 @@ export const data = [
     classification: "Fish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/magikarp.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/magikarp.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/1a/Spr_1b_129.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -8128,7 +8128,7 @@ export const data = [
     classification: "Atrocious Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/gyarados.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/gyarados.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/05/Spr_1b_130.png"
     },
     types: ["Water", "Flying"],
     resistant: ["Fire", "Water", "Fighting", "Ground", "Bug", "Steel"],
@@ -8188,7 +8188,7 @@ export const data = [
     classification: "Transport Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/lapras.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/lapras.png"
+      old: "https://archives.bulbagarden.net/media/upload/7/77/Spr_1b_131.png"
     },
     types: ["Water", "Ice"],
     resistant: ["Water", "Ice"],
@@ -8242,7 +8242,7 @@ export const data = [
     classification: "Transform Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/ditto.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/ditto.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/bd/Spr_1b_132.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -8281,7 +8281,7 @@ export const data = [
     classification: "Evolution Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/eevee.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/eevee.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/11/Spr_1b_133.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -8353,7 +8353,7 @@ export const data = [
     classification: "Bubble Jet Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/vaporeon.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/vaporeon.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/50/Spr_1b_134.png"
     },
     types: ["Water"],
     resistant: ["Fire", "Water", "Ice", "Steel"],
@@ -8408,7 +8408,7 @@ export const data = [
     classification: "Lightning Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/jolteon.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/jolteon.png"
+      old: "https://archives.bulbagarden.net/media/upload/2/26/Spr_1b_135.png"
     },
     types: ["Electric"],
     resistant: ["Electric", "Flying", "Steel"],
@@ -8463,7 +8463,7 @@ export const data = [
     classification: "Flame Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/flareon.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/flareon.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/1f/Spr_1b_136.png"
     },
     types: ["Fire"],
     resistant: ["Fire", "Grass", "Ice", "Bug", "Steel", "Fairy"],
@@ -8518,7 +8518,7 @@ export const data = [
     classification: "Virtual Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/porygon.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/porygon.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/d4/Spr_1b_137.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -8572,7 +8572,7 @@ export const data = [
     classification: "Spiral Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/omanyte.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/omanyte.png"
+      old: "https://archives.bulbagarden.net/media/upload/5/59/Spr_1b_138.png"
     },
     types: ["Rock", "Water"],
     resistant: ["Normal", "Fire", "Ice", "Poison", "Flying"],
@@ -8636,7 +8636,7 @@ export const data = [
     classification: "Spiral Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/omastar.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/omastar.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/68/Spr_1b_139.png"
     },
     types: ["Rock", "Water"],
     resistant: ["Normal", "Fire", "Ice", "Poison", "Flying"],
@@ -8696,7 +8696,7 @@ export const data = [
     classification: "Shellfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/kabuto.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/kabuto.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/c8/Spr_1b_140.png"
     },
     types: ["Rock", "Water"],
     resistant: ["Normal", "Fire", "Ice", "Poison", "Flying"],
@@ -8760,7 +8760,7 @@ export const data = [
     classification: "Shellfish Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/kabutops.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/kabutops.png"
+      old: "https://archives.bulbagarden.net/media/upload/f/f8/Spr_1b_141.png"
     },
     types: ["Rock", "Water"],
     resistant: ["Normal", "Fire", "Ice", "Poison", "Flying"],
@@ -8820,7 +8820,7 @@ export const data = [
     classification: "Fossil Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/aerodactyl.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/aerodactyl.png"
+      old: "https://archives.bulbagarden.net/media/upload/6/63/Spr_1b_142.png"
     },
     types: ["Rock", "Flying"],
     resistant: ["Normal", "Fire", "Poison", "Flying", "Bug"],
@@ -8874,7 +8874,7 @@ export const data = [
     classification: "Sleeping Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/snorlax.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/snorlax.png"
+      old: "https://archives.bulbagarden.net/media/upload/1/11/Spr_1b_143.png"
     },
     types: ["Normal"],
     resistant: ["Ghost"],
@@ -8928,7 +8928,7 @@ export const data = [
     classification: "Freeze Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/articuno.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/articuno.png"
+      old: "https://archives.bulbagarden.net/media/upload/3/33/Spr_1b_144.png"
     },
     types: ["Ice", "Flying"],
     resistant: ["Grass", "Ground", "Bug"],
@@ -8979,7 +8979,7 @@ export const data = [
     classification: "Electric Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/zapdos.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/zapdos.png"
+      old: "https://archives.bulbagarden.net/media/upload/d/dd/Spr_1b_145.png"
     },
     types: ["Electric", "Flying"],
     resistant: ["Grass", "Fighting", "Flying", "Bug", "Steel"],
@@ -9030,7 +9030,7 @@ export const data = [
     classification: "Flame Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/moltres.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/moltres.png"
+      old: "https://archives.bulbagarden.net/media/upload/4/4e/Spr_1b_146.png"
     },
     types: ["Fire", "Flying"],
     resistant: ["Fire", "Grass", "Fighting", "Bug", "Steel", "Fairy"],
@@ -9081,7 +9081,7 @@ export const data = [
     classification: "Dragon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/dratini.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/dratini.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/ed/Spr_1b_147.png"
     },
     types: ["Dragon"],
     resistant: ["Fire", "Water", "Electric", "Grass"],
@@ -9140,7 +9140,7 @@ export const data = [
     classification: "Dragon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/dragonair.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/dragonair.png"
+      old: "https://archives.bulbagarden.net/media/upload/e/ec/Spr_1b_148.png"
     },
     types: ["Dragon"],
     resistant: ["Fire", "Water", "Electric", "Grass"],
@@ -9205,7 +9205,7 @@ export const data = [
     classification: "Dragon Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/dragonite.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/dragonite.png"
+      old: "https://archives.bulbagarden.net/media/upload/c/ca/Spr_1b_149.png"
     },
     types: ["Dragon", "Flying"],
     resistant: ["Fire", "Water", "Grass", "Fighting", "Ground", "Bug"],
@@ -9269,7 +9269,7 @@ export const data = [
     classification: "Genetic Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/mewtwo.png"
+      old: "https://archives.bulbagarden.net/media/upload/0/04/Spr_1b_150.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
@@ -9325,7 +9325,7 @@ export const data = [
     classification: "New Species Pokémon",
     sprites: {
       new: "https://img.pokemondb.net/sprites/black-white/anim/normal/mew.gif",
-      old: "https://img.pokemondb.net/sprites/red-blue/normal/mew.png"
+      old: "https://archives.bulbagarden.net/media/upload/b/b8/Spr_1b_151.png"
     },
     types: ["Psychic"],
     resistant: ["Fighting", "Psychic"],
