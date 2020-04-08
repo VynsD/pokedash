@@ -1,6 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
 import * as ANTD from 'antd';
-
 import PokemonsByNumber from './queries/pokemonsByNumber';
 
 // Types
@@ -61,7 +60,6 @@ function LeftSide(Props: any) {
 function RightSide(Props: any) {
   // Hooks
   const [rightPannelState, setRightPannelState] = useState('right-wrapper--open');
-
   function changePannelState(): void {
     rightPannelState === 'right-wrapper--open' ? (
       setRightPannelState('right-wrapper--close')
@@ -88,8 +86,8 @@ function RightSide(Props: any) {
         </div>
         <div className="right-pannel_multiBtns">
           {
-            btns.map((el) => {
-              return <span className={el.name}></span>
+            btns.map((el, i) => {
+              return <span key={i} className={el.name}></span>
             })
           }
         </div>
@@ -156,9 +154,11 @@ class Pokedex extends Component<{}, PokedexState> {
     }
 
     return (
-      <div className="pokedex-wrapper">
-        <LeftSide {...LeftSideProps} />
-        <RightSide {...RightSideProps} />
+      <div className="pokedex">
+        <div className="pokedex-wrapper">
+          <LeftSide {...LeftSideProps} />
+          <RightSide {...RightSideProps} />
+        </div>
       </div>
     );
   }

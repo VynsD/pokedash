@@ -1,7 +1,10 @@
 /* General */
 .pokedex {
+  @include expand-content(95%, 80vh);
+  @include display-flex(row, center, center);
+
   &-wrapper {
-    @include expand-content(100%);
+    @include expand-content(95%, 65%);
     @include display-flex(row, flex-end, center);
     margin: 10px; 
     //background:linear-gradient( #cacaca 0%, #00ffca 100%);
@@ -150,10 +153,34 @@
           z-index: 2;
           display: inline-block;
           @include expand-content(90%, 60%);
+          font-family: Courier;
           border: .3vh solid GRAY;
           border-radius: 2vh;
           background: #82c721;
-          box-shadow: -0.2vh 0.2vh 0vh 0.2vh rgba(0, 0, 0, 0.2) inset, 0vh 0vh 2vh 0.2vh #82c721
+          box-shadow: -0.2vh 0.2vh 0vh 0.2vh rgba(0, 0, 0, 0.2) inset, 0vh 0vh 2vh 0.2vh #82c721;
+
+          //* OVERRIDES
+          .ant-spin {
+            @include self-center();
+            color: rgba(0, 0, 0, 0.6);
+            
+            .ant-spin-dot {
+              .ant-spin-dot-item {
+                background-color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+          .card {
+            @include expand-content(100%);
+            @include display-grid(50% 50%, 1fr);
+            background: transparent;
+            border: none;
+
+            &-sprite {
+              margin-top: 5%;
+              filter: grayscale(1.0);
+            }
+          }
         }
         &_red-dot {
           @include expand-content(15px);
@@ -235,11 +262,32 @@
               bottom: 6%;
               left: 25%;
               @include expand-content(120px, 50px);
+              @include display-flex(row, center, center);
               border: .3vh solid GRAY;
               border-radius: 10px;
               background: #82c721;
               color: gray;
-              box-shadow: -0.2vh 0.2vh 0vh 0.2vh rgba(0, 0, 0, 0.2) inset, 0vh 0vh 2vh 0.2vh #82c721
+              box-shadow: -0.2vh 0.2vh 0vh 0.2vh rgba(0, 0, 0, 0.2) inset, 0vh 0vh 2vh 0.2vh #82c721;
+            
+              //* OVERRIDES
+                .ant-input-number {
+                  @include expand-content(90%, 75%);
+                  margin-top: 3%;
+                  margin-right: 3%;
+                  background: transparent;
+                  border: 1px solid gray;
+                  
+                  &-handler {
+                    &-wrap {
+                      background: transparent;
+                      border-left: 1px solid gray;
+                    }
+                    &-down {
+                      border-top: 1px solid gray;
+                    }
+                  }
+                }
+              //*/
             }
           }
           &--cross {
@@ -403,10 +451,35 @@
           z-index: 2;
           display: inline-block;
           @include expand-content(90%, 80px);
+          font-family: Courier;
           border: .3vh solid GRAY;
           border-radius: 2vh;
           background: #82c721;
           box-shadow: -0.2vh 0.2vh 0vh 0.2vh rgba(0, 0, 0, 0.2) inset, 0vh 0vh 2vh 0.2vh #82c721;
+
+          //* OVERRIDES
+          .ant-spin {
+            @include self-center();
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.6);
+            
+            .ant-spin-dot {
+              font-size: 12px;
+              @include expand-content(1.8em);
+              margin-top: 10%;
+      
+              .ant-spin-dot-item {
+                @include expand-content(12px);
+                background-color: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+          .card-description {
+            @include expand-content(100%, 80%);
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 18px;
+          }
+          //*/
         }
         &_multiBtns {
           position: absolute;
