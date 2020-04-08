@@ -1,4 +1,4 @@
-import React, { Component, Props } from 'react';
+import React, { Component } from 'react';
 import * as ANTD from 'antd';
 
 // Consts
@@ -8,11 +8,11 @@ type HeaderProps = {
   callDashboard: any,
   callPokedex: any,
 }
+
 export class Header extends Component<HeaderProps, {}> {
   constructor(props: HeaderProps) {
     super(props);
   }
-
   checkKey = (key: string): void => {
     key === "1" ? this.props.callDashboard() : this.props.callPokedex();
   }

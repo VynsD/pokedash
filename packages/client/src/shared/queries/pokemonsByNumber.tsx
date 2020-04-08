@@ -3,10 +3,10 @@ import * as ANTD from 'antd';
 
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost'; // import gql from 'graphql-tag';
-import { PokemonEdge } from '../../interfaces';
+import { PokemonEdge } from '../data/interfaces';
 
-import Loading from '../loading';
-import ErrorNotFound from '../errors';
+import Loading from '../components/loading';
+import ErrorNotFound from '../components/errors';
 
 // Consts
 const QUERY_BY_TYPE = gql`
@@ -30,7 +30,7 @@ const QUERY_BY_TYPE = gql`
         hasNextPage
       }
     }
-}
+  }
 `;
 
 function PokemonsByNumber(props: any) {
@@ -47,7 +47,6 @@ function PokemonsByNumber(props: any) {
   if (loading) return <Loading />
   // Error Template
   if (error) return <ErrorNotFound {...ErrorProps} />
-
   // Success Template
   return (
     typeData === 'description' ? (

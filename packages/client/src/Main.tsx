@@ -6,7 +6,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 
 import Header from './shared/components/header';
 import Content from './shared/components/content';
-import Pokedex from './shared/components/pokedex';
+import Pokedex from './shared/pages/pokedex';
 import Footer from './shared/components/footer';
 
 // Types

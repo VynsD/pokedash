@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import * as ANTD from 'antd';
-import PokemonsByNumber from './queries/pokemonsByNumber';
+import PokemonsByNumber from '../queries/pokemonsByNumber';
 
 // Types
 type PokedexState = {

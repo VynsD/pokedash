@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import * as ANTD from 'antd';
 
-import Pokemons from '../components/queries/pokemons';
-import PokemonsByType from '../components/queries/pokemonsByType';
+import Pokemons from '../queries/pokemons';
+import PokemonsByType from '../queries/pokemonsByType';
 
 // Types
 type ContnetState = {
@@ -15,6 +15,7 @@ type ContnetState = {
 // Const
 const { Search } = ANTD.Input;
 const { Radio } = ANTD;
+
 class Content extends Component<{}, ContnetState> {
   constructor(props: {}) {
     super(props);
