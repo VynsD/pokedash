@@ -16,7 +16,7 @@ type MainState = {
 }
 
 // Client-Server linking
-const client: any = new ApolloClient({
+const client: ApolloClient<{}> = new ApolloClient({
   uri: "http://localhost:4000/"
 });
 

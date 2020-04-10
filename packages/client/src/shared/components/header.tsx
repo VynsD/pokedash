@@ -5,8 +5,8 @@ import * as ANTD from 'antd';
 const { TabPane } = ANTD.Tabs;
 // Props
 type HeaderProps = {
-  callDashboard: any,
-  callPokedex: any,
+  callDashboard: () => void;
+  callPokedex: () => void;
 }
 
 export class Header extends Component<HeaderProps, {}> {

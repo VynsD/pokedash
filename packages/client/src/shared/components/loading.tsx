@@ -1,7 +1,7 @@
 import React from 'react';
 import * as ANTD from 'antd';
 
-function Loading(props: any) {
+function Loading() {
   return (
     <div className="grid-onlyElement">
       <ANTD.Spin tip="Loading..." />

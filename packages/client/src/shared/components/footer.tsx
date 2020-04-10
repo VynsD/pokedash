@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/img/pokeball.svg';
 
-function Footer(props: any) {
+function Footer() {
   return (
     <footer className="footer-wrapper">
       <div className="footer-empty"></div>

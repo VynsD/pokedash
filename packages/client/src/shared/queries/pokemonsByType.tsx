@@ -8,6 +8,14 @@ import { PokemonEdge } from '../data/interfaces';
 import Loading from '../components/loading';
 import ErrorNotFound from '../components/errors';
 
+// Type
+type queryParams = {
+  q?: string,
+  after?: string,
+  limit?: number,
+  pokemonType: string
+}
+
 // Query Body
 const QUERY_BY_TYPE = gql`
   query queryByType($pokemonType: String!, $after: ID, $limit: Int) {
@@ -33,7 +41,7 @@ const QUERY_BY_TYPE = gql`
   }
 `;
 
-function PokemonsByType(props: any) {
+function PokemonsByType(props: queryParams) {
   // Consts
   let pokemonType = props.pokemonType;
   const { loading, error, data } = useQuery(QUERY_BY_TYPE, {

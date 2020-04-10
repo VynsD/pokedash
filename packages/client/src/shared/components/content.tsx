@@ -5,7 +5,7 @@ import Pokemons from '../queries/pokemons';
 import PokemonsByType from '../queries/pokemonsByType';
 
 // Types
-type ContnetState = {
+type ContentState = {
   typesDrawer: boolean
   searchBarSelected: string
   drawerUnfold: string
@@ -16,7 +16,7 @@ type ContnetState = {
 const { Search } = ANTD.Input;
 const { Radio } = ANTD;
 
-class Content extends Component<{}, ContnetState> {
+class Content extends Component<{}, ContentState> {
   constructor(props: {}) {
     super(props);
     this.state = {
@@ -27,13 +27,13 @@ class Content extends Component<{}, ContnetState> {
       pokemonSearchedByType: "",
     }
   }
-  setPokemonNameValue(this: any, value: string): void {
+  setPokemonNameValue(value: string): void {
     this.setState({
       pokemonSearchedByName: value,
       pokemonSearchedByType: ""
     });
   };
-  setPokemonTypeValue(this: any, value: string): void {
+  setPokemonTypeValue(value: string): void {
     this.setState({
       pokemonSearchedByName: "",
       pokemonSearchedByType: value

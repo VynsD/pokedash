@@ -4,10 +4,19 @@ import PokemonsByNumber from '../queries/pokemonsByNumber';
 
 // Types
 type PokedexState = {
-  pokemonSearchedByNumber: number,
+  pokemonSearchedByNumber: string,
+}
+type LeftSidePropsType = {
+  formatID: (value: number) => string;
+  formatReverse: (value: string) => number;
+  onChange: (value: number) => void;
+  pokemonSearchedByNumber: string;
+}
+type RightSidePropsType = {
+  pokemonSearchedByNumber: string;
 }
 
-function LeftSide(Props: any) {
+function LeftSide(Props: LeftSidePropsType) {
   // Hooks
   const [leftSideState] = useState(Props);
 
@@ -57,7 +66,7 @@ function LeftSide(Props: any) {
   )
 }
 
-function RightSide(Props: any) {
+function RightSide(Props: RightSidePropsType) {
   // Hooks
   const [rightPannelState, setRightPannelState] = useState('right-wrapper--open');
   function changePannelState(): void {
@@ -123,7 +132,7 @@ class Pokedex extends Component<{}, PokedexState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      pokemonSearchedByNumber: 0
+      pokemonSearchedByNumber: ""
     }
   }
   formatID(value: number): string {
@@ -133,10 +142,11 @@ class Pokedex extends Component<{}, PokedexState> {
     let parsed = value.replace(/^00|^0/g, "");
     return parseInt(parsed);
   }
-  setPokemonNumberValue(this: any, value: number): void {
-    let parsed = value - 1 // For specific Number insert
+  setPokemonNumberValue(value: number): void {
+    // Get the exact number insert and format for query prupose
+    let parsed = this.formatID(value - 1)
     this.setState({
-      pokemonSearchedByNumber: this.formatID(parsed)
+      pokemonSearchedByNumber: parsed
     });
   };
 

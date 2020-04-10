@@ -8,8 +8,16 @@ import { PokemonEdge } from '../data/interfaces';
 import Loading from '../components/loading';
 import ErrorNotFound from '../components/errors';
 
+// Type
+type queryParams = {
+  q?: string,
+  after: string,
+  limit: number,
+  typeData: string
+}
+
 // Consts
-const QUERY_BY_TYPE = gql`
+const QUERY_BY_NUMBER = gql`
   query query($q: String, $after: ID, $limit: Int) {
     pokemons(q: $q, after: $after, limit: $limit) {
       edges {
@@ -33,10 +41,10 @@ const QUERY_BY_TYPE = gql`
   }
 `;
 
-function PokemonsByNumber(props: any) {
+function PokemonsByNumber(props: queryParams) {
   // Consts
   let { q, after, limit, typeData } = props;
-  const { loading, error, data } = useQuery(QUERY_BY_TYPE, {
+  const { loading, error, data } = useQuery(QUERY_BY_NUMBER, {
     variables: { q, after, limit },
   });
   const ErrorProps = {
