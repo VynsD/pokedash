@@ -52,9 +52,9 @@ function LeftSide(Props: LeftSidePropsType) {
                 defaultValue={0}
                 min={0}
                 max={151}
-                formatter={(value: any) => leftSideState.formatID(value)}
-                parser={(value: any) => leftSideState.formatReverse(value)}
-                onChange={(value: any) => leftSideState.onChange(value)}
+                formatter={(value) => leftSideState.formatID(Number(value))}
+                parser={(value) => leftSideState.formatReverse(`${value}`)}
+                onChange={(value) => leftSideState.onChange(Number(value))}
               />
             </div>
           </div>

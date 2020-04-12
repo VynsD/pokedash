@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as ANTD from 'antd';
+import { RadioChangeEvent } from "antd/lib/radio";
 
 import Pokemons from '../queries/pokemons';
 import PokemonsByType from '../queries/pokemonsByType';
@@ -61,7 +62,7 @@ class Content extends Component<{}, ContentState> {
         })
       );
   };
-  typeSetter = (e: any): void => {
+  typeSetter = (e: RadioChangeEvent): void => {
     this.setPokemonTypeValue(e.target.value);
   };
 
