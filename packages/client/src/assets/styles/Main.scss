@@ -1,0 +1,343 @@
+/* Imports */
+@import '~antd/dist/antd.css';
+@import './themes/mixins';
+@import './themes/animations';
+@import './themes/pokedex';
+
+//* Override
+.ant-tabs {
+  background-color: #282c34;
+  color: #FFF;
+
+  &-nav &-tab-active {
+    background: linear-gradient(90deg, rgba(74,165,224,1) 28%, rgba(115,240,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.ant-radio-group {
+  @include display-grid(repeat(3, 1fr), repeat(6, 1fr), 5px);
+  padding: 10px 10px 0 10px;
+
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: currentColor;
+  }
+}
+//*/
+
+/* Generals */
+body {
+  @include expand-content(100%);
+
+  .app {
+    &-content {
+      @include expand-content(100%);
+      text-align: center;
+      font-family: Montserrat, 'Fira Code', sans-serif;
+      background-color: #282c34;
+      color: #FFF
+    }
+    &-wrapper {
+      min-height: 80vh;
+      @include display-flex(column, center, flex-start);
+      font-size: calc(10px + 2vmin);
+      color: white;
+      background-color: #282c34;
+    } 
+  }
+
+  #root {
+    height: inherit;
+  }
+
+  /* Elements */
+  // Grid
+  .grid {
+    &-onlyElement {
+      @include expand-content(100%);
+      @include display-flex(row, center, space-evenly);
+
+      //* Override
+      .ant-spin {
+        font-size: 22px;
+
+        .ant-spin-dot {
+          font-size: 15px;
+          @include expand-content(2em);
+  
+          .ant-spin-dot-item {
+            @include expand-content(15px);
+          }
+        }
+      }
+      //*/
+      &--text {
+        color: #FFF;
+      }        
+    }
+    &-wrapper {
+      @include expand-content(100%);
+      @include display-grid(auto, repeat(5, 1fr), 5px);
+
+      @media screen and (max-width: 425px) {
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(10, 1fr);
+      }
+    }
+  }
+
+  // Card
+  .card {
+    @include expand-content(200px, 230px);
+    @include display-grid(1fr auto, 1fr);
+
+    &-sprite {
+      @include expand-content(76px, 73px);
+      max-width: 100%;
+      border: 0;
+      font-size: .75rem;
+      color: #a3a3a3;
+
+      &-fixed {
+        display: inline-block;
+        max-width: none;
+        vertical-align: middle;
+      }
+    }
+    &-number {
+      @include self-center();
+    }
+    &-description {
+      @include display-grid(auto, 1fr, 5px);
+
+      &--classification {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      &--types {
+        grid-area: 2 / 1 / 3 / 2;
+        @include display-flex(row, center, space-evenly);
+      }
+    }
+  }
+
+  // Logo
+  .pokelogo {
+    height: 10vmin;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .pokelogo {
+      animation: pokeLogo-spin infinite 10s linear;
+    }
+  }
+
+  .error {
+    &-wrapper {
+      @include expand-content(70%);
+      @include display-grid(1fr 3fr, 1fr);
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #6a2e2ec7, transparent);
+    }
+    &-header {
+      grid-area: 1 / 1 / 2 / 2;
+      color: #9a1e1e;
+    }
+    &-message {
+      @include expand-content(100%, 70%);
+      grid-area: 2 / 1 / 3 / 2;
+      @include display-grid(repeat(3, 1fr), 3fr 1fr);
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center;
+    
+      :first-child {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      :nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      :nth-child(3) {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+    }
+    &-img {
+      grid-area: 1 / 2 / 4 / 3;
+      @include expand-content(70%);
+      @include self-center();
+    }
+  }
+
+  /* Header */
+  .header-wrapper {
+    font-size: 18px;
+  }
+
+  /* Main Content */
+  .main {
+    &-wrapper {
+      @include display-grid(0.5fr 1fr 4.5fr, 5fr);
+      align-items: center;
+      margin: 2.5% 0;
+
+      &_header {
+        @include expand-content(100);
+        grid-area: 1 / 1 / 3 / 2;
+        @include display-grid(1fr 2fr, 2fr 3fr);
+
+        &--input {
+          grid-area: 1 / 1 / 2 / 2;
+          padding-top: 13px;
+
+          .search-bar {
+            @include expand-content(50%, fit-content);
+            will-change: auto;
+            transition: width .55s ease-in-out;
+            
+            &--open {
+              @include expand-content(90%, fit-content);
+              transition: width .55s ease-in-out;
+            }
+          }
+        }
+        &--drawer {
+          grid-area: 1 / 2 / 3 / 3;
+          
+          .drawer {
+            &-handle {              
+              &--trigger {
+                @include self-center();
+              }
+            }
+            &-radio {
+              pointer-events: none;
+              will-change: auto;
+              
+              &--initial {
+                @include expand-content(100%, 0);
+                opacity: 0;
+                transform-origin: 0;
+              }
+              &--fold {
+                animation: drawer-close .55s ease-in-out forwards;
+              }
+              &--unfold{
+                animation: drawer-open .55s ease-in-out forwards;
+                pointer-events: auto;
+              }
+            }
+          }
+        }
+      }
+      &_results {
+        @include expand-content(100%, 90%);
+        grid-area: 3 / 1 / 4 / 2;
+        @include display-flex();
+      }
+    }
+  }
+
+  /* Radio */
+  .radio {
+    &-wrapper {
+      @include expand-content(100%);
+    }
+    &--bug {
+      @include override-btn-color(#729f3f, #fff);
+    }
+    &--dark {
+      @include override-btn-color(#707070, #fff);
+    }
+    &--dragon {
+      @include override-btn-color-dual(#53a4cf, #f16e57, #fff);
+    }
+    &--electric {
+      @include override-btn-color(#eed535, #000);
+    }
+    &--fairy {
+      @include override-btn-color(#fdb9e9, #000);
+    }
+    &--fighting {
+      @include override-btn-color(#d56723, #fff);
+    }
+    &--fire {
+      @include override-btn-color(#fd7d24, #fff);
+    }
+    &--flying {
+      @include override-btn-color-dual(#3dc7ef, #bdb9b8, #fff);
+    }
+    &--ghost {
+      @include override-btn-color(#7b62a3, #fff);
+    }
+    &--grass {
+      @include override-btn-color(#9bcc50, #000);
+    }
+    &--ground {
+      @include override-btn-color-dual(#f7de3f, #ab9842, #000);
+    }
+    &--ice {
+      @include override-btn-color(#51c4e7, #000);
+    }
+    &--normal {
+      @include override-btn-color(#a4acaf, #000);
+    }
+    &--poison {
+      @include override-btn-color(#b97fc9, #fff);
+    }
+    &--psychic {
+      @include override-btn-color(#f366b9, #fff);
+    }
+    &--rock {
+      @include override-btn-color(#a38c21, #fff);
+    }
+    &--steel {
+      @include override-btn-color(#9eb7b8, #000);
+    }
+    &--water {
+      @include override-btn-color(#4592c4, #fff);
+    }
+  }
+
+  /* Footer */
+  .footer {
+    &-wrapper {
+      @include expand-content(100%, 72px);
+      @include display-grid(100%, 4.5fr repeat(3, 0.5fr) 4.5fr );
+      align-items: center;
+      justify-items: center;
+      padding-bottom: 5px;
+
+      @media screen and (max-width: 1440px) {
+        grid-template-columns: 4.5fr repeat(3, 1fr) 4.5fr;
+      }
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: 4fr repeat(3, 1fr) 4fr;
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 3fr repeat(3, 1fr) 3fr;
+      }
+    }
+    &-empty {
+      content: " ";
+    }
+    &-icon {
+      grid-area: 1 / 3 / 2 / 4;
+      @include expand-content(100%);
+    }
+    &-text {
+      font-size: 22px;
+      font-weight: 600;
+      &_left {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      &_right {
+        grid-area: 1 / 4 / 2 / 5;
+      }
+    }
+  }
+}

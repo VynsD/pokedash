@@ -1,3 +1,8 @@
+export interface PokeImage {
+  new: string
+  old: string
+}
+
 export interface Edge<A> {
   cursor: string
   node: A
